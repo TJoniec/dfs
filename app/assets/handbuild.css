@@ -1,0 +1,51 @@
+/* assets/handbuild.css */
+
+/* Control & placeholder */
+.hb-dd .Select-control {
+  background-color: #111 !important;
+  border-color: #444 !important;
+}
+.hb-dd .Select-placeholder {
+  color: #aaa !important;
+}
+
+/* Selected value “pill”/label (single-select) */
+.hb-dd .Select-value {
+  background-color: #1b1b1b !important;  /* get rid of light grey */
+  border-color: #444 !important;
+}
+.hb-dd .Select-value-label {
+  color: #ffd84d !important;             /* <-- high-contrast yellow */
+  font-weight: 600 !important;
+}
+
+/* Input text color while typing */
+.hb-dd .Select-input > input {
+  color: #fff !important;
+}
+
+/* Dropdown menu (options list) */
+.hb-dd .Select-menu-outer,
+.hb-dd .Select-menu {
+  background-color: #111 !important;
+  border-color: #444 !important;
+}
+.hb-dd .Select-option {
+  background-color: #111 !important;
+  color: #eee !important;
+}
+.hb-dd .Select-option.is-focused,
+.hb-dd .Select-option:hover {
+  background-color: #262626 !important;
+}
+
+/* Caret arrow */
+.hb-dd .Select-arrow {
+  border-top-color: #eee !important;
+}
+
+/* Focus ring (optional, subtle) */
+.hb-dd.is-focused > .Select-control {
+  border-color: #888 !important;
+  box-shadow: none !important;
+}

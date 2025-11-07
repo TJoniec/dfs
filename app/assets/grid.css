@@ -1,0 +1,15 @@
+/* Text color rules for Alpine Dark theme */
+.ag-theme-alpine-dark .ag-row.row-better .ag-cell {
+  color: #1db954 !important;   /* green */
+  font-weight: 600;
+}
+
+.ag-theme-alpine-dark .ag-row.row-worse .ag-cell {
+  color: #e74c3c !important;   /* red */
+  font-weight: 600;
+}
+
+/* Keep selection overlay from washing out text */
+.ag-theme-alpine-dark .ag-row.ag-row-selected .ag-cell {
+  color: inherit !important;
+}

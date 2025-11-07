@@ -1,0 +1,127 @@
+data:  
+- stores structured non visual data and is used in compnents such as:
+dcc,Store, dcc.Graph, dcc.Dropdown/
+-typical context is a dict, list, str, number
+
+children:  Renders visual conent in the browser,
+-used in components such as html.Div, html.Pre, dbc.Card.
+- typical context:  text, dash components , html
+
+
+Dynamic, row aware login 
+
+Aggrid is a JavaScript library.  IT runs inside the browser
+Feature	Purpose
+where you can use function:
+cellStyle	Inline styles for a cell
+cellClassRules	Apply CSS classes based on logic
+valueFormatter	Format values (e.g., currency, rounding)
+tooltipValueGetter	Custom tooltip text
+getRowStyle	Style entire rows
+getRowClass	Apply row-level CSS classes
+
+
+ID Type	Purpose
+Container ID	Manage the whole section (e.g. regenerate, clear, replace)
+UUID Card ID	Handle per-card logic (e.g. save, highlight, toggle)
+
+----Pseudocode------
+----Data and IDs ---
+STATE:
+  global_store_df3 := list[dict]  // all generated lineups; each has "uuid-index"
+  saved_lineups_store := list[dict]  // user-saved subset
+
+ID SCHEME:
+  checkbox_id := { "type": "save-toggle", "index": <uuid-index> }
+  card_id     := { "type": "optimizer-lineup-card-initial-uuid", "index": <uuid-index> }
+
+----Card Rendering -----
+FUNCTION generate_card_layout(df, saved_uuids = ∅) -> Div:
+  IF df is empty:
+    RETURN Div("No lineups generated.")
+
+  FOR row IN df.rows:
+    uid := row["uuid-index"]
+
+    header_text := f"Lineup #{row['Lineup ID']} — FPTS: {row['Total Lineup FPTS']}, Salary: {row['Total Lineup Salary']}"
+
+    player_items := []
+    FOR slot IN ['QB1','RB1','RB2','WR1','WR2','WR3','TE1','FLEX','DST1']:
+      player := row.get(slot)
+      IF player != 'None':
+        player_items.APPEND( Li(f"{slot}: ...") )
+
+    checkbox := Checkbox(
+        id = {"type":"save-toggle","index": uid},
+        value = (uid IN saved_uuids)  // reflect saved state
+    )
+
+    card := Card(
+      Header( header_text, checkbox ),
+      Body( Ul(player_items) ),
+      id = {"type":"optimizer-lineup-card-initial-uuid","index": uid}
+    )
+
+    ADD card TO list_of_cards
+
+  RETURN Div(list_of_cards)
+
+  ----Render Saved Lineups -----
+  CALLBACK -> Output(saved_lineup_card_container.children)
+INPUT:  saved_lineups_store.data
+STEPS:
+  IF saved_lineups_store is empty:
+    RETURN Div("No saved lineups yet.")
+  df := DataFrame(saved_lineups_store)
+  ENSURE df has "uuid-index" (assign if missing)
+  saved_uuids := set(df["uuid-index"])
+  RETURN generate_card_layout(df, saved_uuids)   // all checkboxes checked
+
+----Render original lineups column
+CALLBACK -> Output(initial_lineup_card_container.children)
+INPUTS:  global_store_df3.data, saved_lineups_store.data
+STEPS:
+  IF global_store_df3 is empty:
+    RETURN Div("No lineups generated.")
+
+  saved_uuids := set(map(x -> x["uuid-index"], saved_lineups_store or []))
+  filtered := [ row IN global_store_df3 WHERE row["uuid-index"] NOT IN saved_uuids ]
+  df := DataFrame(filtered)
+  ENSURE df has "uuid-index" (assign if missing)
+  RETURN generate_card_layout(df, saved_uuids)   // these will show unchecked
+
+----Save/Unsave toffle (works in both columns)
+CALLBACK -> Output(saved-lineups-store.data)
+INPUTS:
+  values := Input( ALL save-toggle.value )   // list[bool], same order as ids state below
+STATE:
+  ids    := State( ALL save-toggle.id )      // list[dict] with {"index": uuid}
+  saved  := State(saved-lineups-store.data)
+  all    := State(global-store-df3.data)
+BEHAVIOR:
+  IF no ctx.triggered_id:
+    PreventUpdate
+
+  fired_uuid := ctx.triggered_id["index"]
+
+  // find current value for the fired checkbox by matching its id
+  idx := index i where ids[i]["index"] == fired_uuid
+  current_value := values[idx]  // True = save, False = unsave
+
+  IF current_value == True:
+    lineup := FIND x IN all WHERE x["uuid-index"] == fired_uuid
+    IF lineup exists AND fired_uuid NOT IN map(y -> y["uuid-index"], saved):
+      saved.APPEND(lineup)
+  ELSE:
+    saved := [ y IN saved WHERE y["uuid-index"] != fired_uuid ]
+
+  RETURN saved
+
+  ----Invariants Initialization
+  LAYOUT INCLUDES:
+  dcc.Store(id="global-store-df3", data=[...])     // populated elsewhere
+  dcc.Store(id="saved-lineups-store", data=[], storage_type="session" or "local")
+
+REQUIREMENT:
+  Every lineup receives a stable "uuid-index" once, at creation time.
+
