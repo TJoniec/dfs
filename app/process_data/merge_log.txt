@@ -1,394 +1,617 @@
-2025-11-07 20:00:40,226 - INFO - ResultsPlayer changed at row 8: 'Rams ' \u2192 'LAR'
-2025-11-07 20:00:40,226 - INFO - ResultsPlayer changed at row 24: 'Texans ' \u2192 'HOU'
-2025-11-07 20:00:40,227 - INFO - ResultsPlayer changed at row 31: 'Chargers ' \u2192 'LAC'
-2025-11-07 20:00:40,227 - INFO - ResultsPlayer changed at row 37: 'Lions ' \u2192 'DET'
-2025-11-07 20:00:40,227 - INFO - ResultsPlayer changed at row 40: 'Broncos ' \u2192 'DEN'
-2025-11-07 20:00:40,227 - INFO - ResultsPlayer changed at row 44: 'Jaguars ' \u2192 'JAX'
-2025-11-07 20:00:40,227 - INFO - ResultsPlayer changed at row 48: 'Giants ' \u2192 'NYG'
-2025-11-07 20:00:40,228 - INFO - ResultsPlayer changed at row 53: 'Raiders ' \u2192 'LV'
-2025-11-07 20:00:40,228 - INFO - ResultsPlayer changed at row 54: 'Falcons ' \u2192 'ATL'
-2025-11-07 20:00:40,228 - INFO - ResultsPlayer changed at row 63: 'Packers ' \u2192 'GB'
-2025-11-07 20:00:40,228 - INFO - ResultsPlayer changed at row 65: 'Patriots ' \u2192 'NE'
-2025-11-07 20:00:40,228 - INFO - ResultsPlayer changed at row 87: 'Bears ' \u2192 'CHI'
-2025-11-07 20:00:40,228 - INFO - ResultsPlayer changed at row 97: 'Panthers ' \u2192 'CAR'
-2025-11-07 20:00:40,228 - INFO - ResultsPlayer changed at row 103: 'Vikings ' \u2192 'MIN'
-2025-11-07 20:00:40,228 - INFO - ResultsPlayer changed at row 106: 'Saints ' \u2192 'NO'
-2025-11-07 20:00:40,229 - INFO - ResultsPlayer changed at row 109: '49ers ' \u2192 'SF'
-2025-11-07 20:00:40,229 - INFO - ResultsPlayer changed at row 110: 'Titans ' \u2192 'TEN'
-2025-11-07 20:00:40,229 - INFO - ResultsPlayer changed at row 113: 'Steelers ' \u2192 'PIT'
-2025-11-07 20:00:40,229 - INFO - ResultsPlayer changed at row 115: 'Bills ' \u2192 'BUF'
-2025-11-07 20:00:40,229 - INFO - ResultsPlayer changed at row 117: 'Bengals ' \u2192 'CIN'
-2025-11-07 20:00:40,229 - INFO - ResultsPlayer changed at row 120: 'Colts ' \u2192 'IND'
-2025-11-07 20:00:40,229 - INFO - ResultsPlayer changed at row 137: 'Chiefs ' \u2192 'KC'
-2025-11-07 20:00:40,285 - INFO - DST MATCHED: Player='GB', Team='GB' found in ResultsPlayer
-2025-11-07 20:00:40,286 - INFO - DST MATCHED: Player='LAR', Team='LAR' found in ResultsPlayer
-2025-11-07 20:00:40,287 - INFO - DST MATCHED: Player='LAC', Team='LAC' found in ResultsPlayer
-2025-11-07 20:00:40,287 - INFO - DST MATCHED: Player='DET', Team='DET' found in ResultsPlayer
-2025-11-07 20:00:40,288 - INFO - DST MATCHED: Player='NE', Team='NE' found in ResultsPlayer
-2025-11-07 20:00:40,288 - INFO - DST MATCHED: Player='IND', Team='IND' found in ResultsPlayer
-2025-11-07 20:00:40,289 - INFO - DST MATCHED: Player='SF', Team='SF' found in ResultsPlayer
-2025-11-07 20:00:40,289 - INFO - DST MATCHED: Player='JAX', Team='JAX' found in ResultsPlayer
-2025-11-07 20:00:40,289 - INFO - DST MATCHED: Player='DEN', Team='DEN' found in ResultsPlayer
-2025-11-07 20:00:40,289 - INFO - DST MATCHED: Player='CHI', Team='CHI' found in ResultsPlayer
-2025-11-07 20:00:40,289 - INFO - DST MATCHED: Player='KC', Team='KC' found in ResultsPlayer
-2025-11-07 20:00:40,290 - INFO - DST MATCHED: Player='HOU', Team='HOU' found in ResultsPlayer
-2025-11-07 20:00:40,290 - INFO - DST MATCHED: Player='BUF', Team='BUF' found in ResultsPlayer
-2025-11-07 20:00:40,290 - INFO - DST MATCHED: Player='PIT', Team='PIT' found in ResultsPlayer
-2025-11-07 20:00:40,290 - INFO - DST MATCHED: Player='CIN', Team='CIN' found in ResultsPlayer
-2025-11-07 20:00:40,291 - INFO - DST MATCHED: Player='ATL', Team='ATL' found in ResultsPlayer
-2025-11-07 20:00:40,291 - INFO - DST MATCHED: Player='LV', Team='LV' found in ResultsPlayer
-2025-11-07 20:00:40,291 - INFO - DST MATCHED: Player='NYG', Team='NYG' found in ResultsPlayer
-2025-11-07 20:00:40,291 - INFO - DST MATCHED: Player='TEN', Team='TEN' found in ResultsPlayer
-2025-11-07 20:00:40,291 - INFO - DST MATCHED: Player='MIN', Team='MIN' found in ResultsPlayer
-2025-11-07 20:00:40,292 - INFO - DST MATCHED: Player='NO', Team='NO' found in ResultsPlayer
-2025-11-07 20:00:40,292 - INFO - DST MATCHED: Player='CAR', Team='CAR' found in ResultsPlayer
-2025-11-07 20:00:40,292 - INFO - DST Summary: Total=22, Matched=22, Unmatched=0
-2025-11-07 20:00:40,292 - INFO - Matched DSTs: ['GB', 'LAR', 'LAC', 'DET', 'NE', 'IND', 'SF', 'JAX', 'DEN', 'CHI', 'KC', 'HOU', 'BUF', 'PIT', 'CIN', 'ATL', 'LV', 'NYG', 'TEN', 'MIN', 'NO', 'CAR']
-2025-11-07 20:00:40,292 - INFO - Unmatched DSTs: []
-2025-11-07 20:00:40,472 - INFO - MATCHED: ResultsPlayer='Kyle Monangai', Player='Kyle Monangai', _score=nan
-2025-11-07 20:00:40,472 - INFO - MATCHED: ResultsPlayer='Christian McCaffrey', Player='Christian McCaffrey', _score=nan
-2025-11-07 20:00:40,472 - INFO - MATCHED: ResultsPlayer='Ja'Marr Chase', Player='Ja'Marr Chase', _score=nan
-2025-11-07 20:00:40,472 - INFO - MATCHED: ResultsPlayer='Rashee Rice', Player='Rashee Rice', _score=nan
-2025-11-07 20:00:40,473 - INFO - MATCHED: ResultsPlayer='Kimani Vidal', Player='Kimani Vidal', _score=nan
-2025-11-07 20:00:40,473 - INFO - MATCHED: ResultsPlayer='DK Metcalf', Player='DK Metcalf', _score=nan
-2025-11-07 20:00:40,473 - INFO - MATCHED: ResultsPlayer='TreVeyon Henderson', Player='TreVeyon Henderson', _score=nan
-2025-11-07 20:00:40,473 - INFO - MATCHED: ResultsPlayer='Michael Pittman Jr.', Player='Michael Pittman Jr.', _score=nan
-2025-11-07 20:00:40,473 - INFO - MATCHED: ResultsPlayer='LAR', Player='LAR', _score=nan
-2025-11-07 20:00:40,474 - INFO - MATCHED: ResultsPlayer='Tyler Warren', Player='Tyler Warren', _score=nan
-2025-11-07 20:00:40,474 - INFO - MATCHED: ResultsPlayer='Puka Nacua', Player='Puka Nacua', _score=nan
-2025-11-07 20:00:40,474 - INFO - MATCHED: ResultsPlayer='Daniel Jones', Player='Daniel Jones', _score=nan
-2025-11-07 20:00:40,474 - INFO - MATCHED: ResultsPlayer='Kareem Hunt', Player='Kareem Hunt', _score=nan
-2025-11-07 20:00:40,474 - INFO - MATCHED: ResultsPlayer='Jahmyr Gibbs', Player='Jahmyr Gibbs', _score=nan
-2025-11-07 20:00:40,474 - INFO - MATCHED: ResultsPlayer='Tyrone Tracy Jr.', Player='Tyrone Tracy Jr.', _score=nan
-2025-11-07 20:00:40,475 - INFO - MATCHED: ResultsPlayer='Brian Thomas Jr.', Player='Brian Thomas Jr.', _score=nan
-2025-11-07 20:00:40,475 - INFO - MATCHED: ResultsPlayer='Brock Bowers', Player='Brock Bowers', _score=nan
-2025-11-07 20:00:40,475 - INFO - MATCHED: ResultsPlayer='Jauan Jennings', Player='Jauan Jennings', _score=nan
-2025-11-07 20:00:40,475 - INFO - MATCHED: ResultsPlayer='Jaxson Dart', Player='Jaxson Dart', _score=nan
-2025-11-07 20:00:40,475 - INFO - MATCHED: ResultsPlayer='Rome Odunze', Player='Rome Odunze', _score=nan
-2025-11-07 20:00:40,475 - INFO - MATCHED: ResultsPlayer='Parker Washington', Player='Parker Washington', _score=nan
-2025-11-07 20:00:40,476 - INFO - MATCHED: ResultsPlayer='Ladd McConkey', Player='Ladd McConkey', _score=nan
-2025-11-07 20:00:40,476 - INFO - MATCHED: ResultsPlayer='Wan'Dale Robinson', Player='Wan'Dale Robinson', _score=nan
-2025-11-07 20:00:40,476 - INFO - MATCHED: ResultsPlayer='Kyren Williams', Player='Kyren Williams', _score=nan
-2025-11-07 20:00:40,476 - INFO - MATCHED: ResultsPlayer='HOU', Player='HOU', _score=nan
-2025-11-07 20:00:40,477 - INFO - MATCHED: ResultsPlayer='Patrick Mahomes', Player='Patrick Mahomes', _score=nan
-2025-11-07 20:00:40,477 - INFO - MATCHED: ResultsPlayer='Jonathan Taylor', Player='Jonathan Taylor', _score=nan
-2025-11-07 20:00:40,477 - INFO - MATCHED: ResultsPlayer='Caleb Williams', Player='Caleb Williams', _score=nan
-2025-11-07 20:00:40,477 - INFO - MATCHED: ResultsPlayer='Amon-Ra St. Brown', Player='Amon-Ra St. Brown', _score=nan
-2025-11-07 20:00:40,477 - INFO - MATCHED: ResultsPlayer='George Kittle', Player='George Kittle', _score=nan
-2025-11-07 20:00:40,477 - INFO - MATCHED: ResultsPlayer='Travis Kelce', Player='Travis Kelce', _score=nan
-2025-11-07 20:00:40,478 - INFO - MATCHED: ResultsPlayer='LAC', Player='LAC', _score=nan
-2025-11-07 20:00:40,478 - INFO - MATCHED: ResultsPlayer='Theo Johnson', Player='Theo Johnson', _score=nan
-2025-11-07 20:00:40,478 - INFO - MATCHED: ResultsPlayer='Tucker Kraft', Player='Tucker Kraft', _score=nan
-2025-11-07 20:00:40,478 - INFO - MATCHED: ResultsPlayer='Jaylen Warren', Player='Jaylen Warren', _score=nan
-2025-11-07 20:00:40,478 - INFO - MATCHED: ResultsPlayer='Chase Brown', Player='Chase Brown', _score=nan
-2025-11-07 20:00:40,479 - INFO - MATCHED: ResultsPlayer='Jameson Williams', Player='Jameson Williams', _score=nan
-2025-11-07 20:00:40,479 - INFO - MATCHED: ResultsPlayer='DET', Player='DET', _score=nan
-2025-11-07 20:00:40,479 - INFO - MATCHED: ResultsPlayer='Kyle Pitts Sr.', Player='Kyle Pitts Sr.', _score=nan
-2025-11-07 20:00:40,479 - INFO - MATCHED: ResultsPlayer='Justin Jefferson', Player='Justin Jefferson', _score=nan
-2025-11-07 20:00:40,479 - INFO - MATCHED: ResultsPlayer='DEN', Player='DEN', _score=nan
-2025-11-07 20:00:40,479 - INFO - MATCHED: ResultsPlayer='Khalil Shakir', Player='Khalil Shakir', _score=nan
-2025-11-07 20:00:40,479 - INFO - MATCHED: ResultsPlayer='Josh Allen', Player='Josh Allen', _score=nan
-2025-11-07 20:00:40,480 - INFO - MATCHED: ResultsPlayer='Chimere Dike', Player='Chimere Dike', _score=nan
-2025-11-07 20:00:40,480 - INFO - MATCHED: ResultsPlayer='JAX', Player='JAX', _score=nan
-2025-11-07 20:00:40,480 - INFO - MATCHED: ResultsPlayer='Sam LaPorta', Player='Sam LaPorta', _score=nan
-2025-11-07 20:00:40,480 - INFO - MATCHED: ResultsPlayer='Alec Pierce', Player='Alec Pierce', _score=nan
-2025-11-07 20:00:40,480 - INFO - MATCHED: ResultsPlayer='Mac Jones', Player='Mac Jones', _score=nan
-2025-11-07 20:00:40,480 - INFO - MATCHED: ResultsPlayer='NYG', Player='NYG', _score=nan
-2025-11-07 20:00:40,481 - INFO - MATCHED: ResultsPlayer='James Cook III', Player='James Cook III', _score=nan
-2025-11-07 20:00:40,481 - INFO - MATCHED: ResultsPlayer='Jordan Addison', Player='Jordan Addison', _score=nan
-2025-11-07 20:00:40,481 - INFO - MATCHED: ResultsPlayer='Josh Jacobs', Player='Josh Jacobs', _score=nan
-2025-11-07 20:00:40,481 - INFO - MATCHED: ResultsPlayer='Dalton Kincaid', Player='Dalton Kincaid', _score=nan
-2025-11-07 20:00:40,481 - INFO - MATCHED: ResultsPlayer='LV', Player='LV', _score=nan
-2025-11-07 20:00:40,481 - INFO - MATCHED: ResultsPlayer='ATL', Player='ATL', _score=nan
-2025-11-07 20:00:40,481 - INFO - MATCHED: ResultsPlayer='Oronde Gadsden II', Player='Oronde Gadsden II', _score=nan
-2025-11-07 20:00:40,482 - INFO - MATCHED: ResultsPlayer='Jared Goff', Player='Jared Goff', _score=nan
-2025-11-07 20:00:40,482 - INFO - MATCHED: ResultsPlayer='Matthew Stafford', Player='Matthew Stafford', _score=nan
-2025-11-07 20:00:40,482 - INFO - MATCHED: ResultsPlayer='Olamide Zaccheaus', Player='Olamide Zaccheaus', _score=nan
-2025-11-07 20:00:40,482 - INFO - MATCHED: ResultsPlayer='DJ Moore', Player='DJ Moore', _score=nan
-2025-11-07 20:00:40,482 - INFO - MATCHED: ResultsPlayer='Travis Etienne Jr.', Player='Travis Etienne Jr.', _score=nan
-2025-11-07 20:00:40,482 - INFO - MATCHED: ResultsPlayer='Darius Slayton', Player='Darius Slayton', _score=nan
-2025-11-07 20:00:40,483 - INFO - MATCHED: ResultsPlayer='Keenan Allen', Player='Keenan Allen', _score=nan
-2025-11-07 20:00:40,483 - INFO - MATCHED: ResultsPlayer='GB', Player='GB', _score=nan
-2025-11-07 20:00:40,483 - INFO - MATCHED: ResultsPlayer='Juwan Johnson', Player='Juwan Johnson', _score=nan
-2025-11-07 20:00:40,483 - INFO - MATCHED: ResultsPlayer='NE', Player='NE', _score=nan
-2025-11-07 20:00:40,483 - INFO - MATCHED: ResultsPlayer='Joe Flacco', Player='Joe Flacco', _score=nan
-2025-11-07 20:00:40,483 - INFO - MATCHED: ResultsPlayer='Tee Higgins', Player='Tee Higgins', _score=nan
-2025-11-07 20:00:40,483 - INFO - MATCHED: ResultsPlayer='Xavier Worthy', Player='Xavier Worthy', _score=nan
-2025-11-07 20:00:40,484 - INFO - MATCHED: ResultsPlayer='Drake London', Player='Drake London', _score=nan
-2025-11-07 20:00:40,484 - INFO - MATCHED: ResultsPlayer='Justin Herbert', Player='Justin Herbert', _score=nan
-2025-11-07 20:00:40,484 - INFO - MATCHED: ResultsPlayer='Josh Downs', Player='Josh Downs', _score=nan
-2025-11-07 20:00:40,484 - INFO - MATCHED: ResultsPlayer='Kayshon Boutte', Player='Kayshon Boutte', _score=nan
-2025-11-07 20:00:40,484 - INFO - MATCHED: ResultsPlayer='Drake Maye', Player='Drake Maye', _score=nan
-2025-11-07 20:00:40,484 - INFO - MATCHED: ResultsPlayer='Tre Tucker', Player='Tre Tucker', _score=nan
-2025-11-07 20:00:40,484 - INFO - MATCHED: ResultsPlayer='Christian Watson', Player='Christian Watson', _score=nan
-2025-11-07 20:00:40,485 - INFO - MATCHED: ResultsPlayer='Trevor Lawrence', Player='Trevor Lawrence', _score=nan
-2025-11-07 20:00:40,486 - INFO - MATCHED: ResultsPlayer='Dyami Brown', Player='Dyami Brown', _score=nan
-2025-11-07 20:00:40,486 - INFO - MATCHED: ResultsPlayer='Bijan Robinson', Player='Bijan Robinson', _score=nan
-2025-11-07 20:00:40,486 - INFO - MATCHED: ResultsPlayer='Hunter Henry', Player='Hunter Henry', _score=nan
-2025-11-07 20:00:40,486 - INFO - MATCHED: ResultsPlayer='Davante Adams', Player='Davante Adams', _score=nan
-2025-11-07 20:00:40,487 - INFO - MATCHED: ResultsPlayer='Stefon Diggs', Player='Stefon Diggs', _score=nan
-2025-11-07 20:00:40,487 - INFO - MATCHED: ResultsPlayer='T.J. Hockenson', Player='T.J. Hockenson', _score=nan
-2025-11-07 20:00:40,487 - INFO - MATCHED: ResultsPlayer='Nico Collins', Player='Nico Collins', _score=nan
-2025-11-07 20:00:40,488 - INFO - MATCHED: ResultsPlayer='Geno Smith', Player='Geno Smith', _score=nan
-2025-11-07 20:00:40,488 - INFO - MATCHED: ResultsPlayer='Romeo Doubs', Player='Romeo Doubs', _score=nan
-2025-11-07 20:00:40,488 - INFO - MATCHED: ResultsPlayer='Troy Franklin', Player='Troy Franklin', _score=nan
-2025-11-07 20:00:40,488 - INFO - MATCHED: ResultsPlayer='CHI', Player='CHI', _score=nan
-2025-11-07 20:00:40,489 - INFO - MATCHED: ResultsPlayer='J.J. McCarthy', Player='J.J. McCarthy', _score=nan
-2025-11-07 20:00:40,489 - INFO - MATCHED: ResultsPlayer='David Montgomery', Player='David Montgomery', _score=nan
-2025-11-07 20:00:40,489 - INFO - MATCHED: ResultsPlayer='Jordan Love', Player='Jordan Love', _score=nan
-2025-11-07 20:00:40,489 - INFO - MATCHED: ResultsPlayer='Keon Coleman', Player='Keon Coleman', _score=nan
-2025-11-07 20:00:40,489 - INFO - MATCHED: ResultsPlayer='Colston Loveland', Player='Colston Loveland', _score=nan
-2025-11-07 20:00:40,489 - INFO - MATCHED: ResultsPlayer='Chris Olave', Player='Chris Olave', _score=nan
-2025-11-07 20:00:40,490 - INFO - MATCHED: ResultsPlayer='Kendrick Bourne', Player='Kendrick Bourne', _score=nan
-2025-11-07 20:00:40,490 - INFO - MATCHED: ResultsPlayer='Ashton Jeanty', Player='Ashton Jeanty', _score=nan
-2025-11-07 20:00:40,490 - INFO - MATCHED: ResultsPlayer='Quentin Johnston', Player='Quentin Johnston', _score=nan
-2025-11-07 20:00:40,490 - INFO - MATCHED: ResultsPlayer='CAR', Player='CAR', _score=nan
-2025-11-07 20:00:40,490 - INFO - MATCHED: ResultsPlayer='Aaron Rodgers', Player='Aaron Rodgers', _score=nan
-2025-11-07 20:00:40,491 - INFO - MATCHED: ResultsPlayer='Jakobi Meyers', Player='Jakobi Meyers', _score=nan
-2025-11-07 20:00:40,491 - INFO - MATCHED: ResultsPlayer='Tetairoa McMillan', Player='Tetairoa McMillan', _score=nan
-2025-11-07 20:00:40,491 - INFO - MATCHED: ResultsPlayer='Calvin Austin III', Player='Calvin Austin III', _score=nan
-2025-11-07 20:00:40,491 - INFO - MATCHED: ResultsPlayer='Brashard Smith', Player='Brashard Smith', _score=nan
-2025-11-07 20:00:40,492 - INFO - MATCHED: ResultsPlayer='MIN', Player='MIN', _score=nan
-2025-11-07 20:00:40,492 - INFO - MATCHED: ResultsPlayer='Pat Freiermuth', Player='Pat Freiermuth', _score=nan
-2025-11-07 20:00:40,492 - INFO - MATCHED: ResultsPlayer='Jonnu Smith', Player='Jonnu Smith', _score=nan
-2025-11-07 20:00:40,492 - INFO - MATCHED: ResultsPlayer='NO', Player='NO', _score=nan
-2025-11-07 20:00:40,493 - INFO - MATCHED: ResultsPlayer='Rico Dowdle', Player='Rico Dowdle', _score=nan
-2025-11-07 20:00:40,493 - INFO - MATCHED: ResultsPlayer='Elic Ayomanor', Player='Elic Ayomanor', _score=nan
-2025-11-07 20:00:40,493 - INFO - MATCHED: ResultsPlayer='SF', Player='SF', _score=nan
-2025-11-07 20:00:40,493 - INFO - MATCHED: ResultsPlayer='TEN', Player='TEN', _score=nan
-2025-11-07 20:00:40,494 - INFO - MATCHED: ResultsPlayer='C.J. Stroud', Player='C.J. Stroud', _score=nan
-2025-11-07 20:00:40,494 - INFO - MATCHED: ResultsPlayer='Noah Fant', Player='Noah Fant', _score=nan
-2025-11-07 20:00:40,494 - INFO - MATCHED: ResultsPlayer='PIT', Player='PIT', _score=nan
-2025-11-07 20:00:40,494 - INFO - MATCHED: ResultsPlayer='Courtland Sutton', Player='Courtland Sutton', _score=nan
-2025-11-07 20:00:40,495 - INFO - MATCHED: ResultsPlayer='BUF', Player='BUF', _score=nan
-2025-11-07 20:00:40,495 - INFO - MATCHED: ResultsPlayer='Roman Wilson', Player='Roman Wilson', _score=nan
-2025-11-07 20:00:40,495 - INFO - MATCHED: ResultsPlayer='CIN', Player='CIN', _score=nan
-2025-11-07 20:00:40,495 - INFO - MATCHED: ResultsPlayer='J.K. Dobbins', Player='J.K. Dobbins', _score=nan
-2025-11-07 20:00:40,495 - INFO - MATCHED: ResultsPlayer='Matthew Golden', Player='Matthew Golden', _score=nan
-2025-11-07 20:00:40,495 - INFO - MATCHED: ResultsPlayer='IND', Player='IND', _score=nan
-2025-11-07 20:00:40,496 - INFO - MATCHED: ResultsPlayer='Darnell Mooney', Player='Darnell Mooney', _score=nan
-2025-11-07 20:00:40,496 - INFO - MATCHED: ResultsPlayer='Hollywood Brown', Player='Hollywood Brown', _score=nan
-2025-11-07 20:00:40,496 - INFO - MATCHED: ResultsPlayer='Michael Penix Jr.', Player='Michael Penix Jr.', _score=nan
-2025-11-07 20:00:40,496 - INFO - MATCHED: ResultsPlayer='Mack Hollins', Player='Mack Hollins', _score=nan
-2025-11-07 20:00:40,496 - INFO - MATCHED: ResultsPlayer='Evan Engram', Player='Evan Engram', _score=nan
-2025-11-07 20:00:40,497 - INFO - MATCHED: ResultsPlayer='Bo Nix', Player='Bo Nix', _score=nan
-2025-11-07 20:00:40,497 - INFO - MATCHED: ResultsPlayer='JuJu Smith-Schuster', Player='JuJu Smith-Schuster', _score=nan
-2025-11-07 20:00:40,497 - INFO - MATCHED: ResultsPlayer='Taysom Hill', Player='Taysom Hill', _score=nan
-2025-11-07 20:00:40,497 - INFO - MATCHED: ResultsPlayer='Xavier Hutchinson', Player='Xavier Hutchinson', _score=nan
-2025-11-07 20:00:40,497 - INFO - MATCHED: ResultsPlayer='Tyler Higbee', Player='Tyler Higbee', _score=nan
-2025-11-07 20:00:40,497 - INFO - MATCHED: ResultsPlayer='Woody Marks', Player='Woody Marks', _score=nan
-2025-11-07 20:00:40,498 - INFO - MATCHED: ResultsPlayer='Ja'Tavion Sanders', Player='Ja'Tavion Sanders', _score=nan
-2025-11-07 20:00:40,498 - INFO - MATCHED: ResultsPlayer='RJ Harvey', Player='RJ Harvey', _score=nan
-2025-11-07 20:00:40,498 - INFO - MATCHED: ResultsPlayer='Tyjae Spears', Player='Tyjae Spears', _score=nan
-2025-11-07 20:00:40,498 - INFO - MATCHED: ResultsPlayer='Cole Kmet', Player='Cole Kmet', _score=nan
-2025-11-07 20:00:40,498 - INFO - MATCHED: ResultsPlayer='Dalton Schultz', Player='Dalton Schultz', _score=nan
-2025-11-07 20:00:40,499 - INFO - MATCHED: ResultsPlayer='KC', Player='KC', _score=nan
-2025-11-07 20:00:40,499 - INFO - MATCHED: ResultsPlayer='Xavier Legette', Player='Xavier Legette', _score=nan
-2025-11-07 20:00:40,499 - INFO - MATCHED: ResultsPlayer='Tyler Shough', Player='Tyler Shough', _score=nan
-2025-11-07 20:00:40,499 - INFO - MATCHED: ResultsPlayer='Hunter Long', Player='Hunter Long', _score=nan
-2025-11-07 20:00:40,499 - INFO - MATCHED: ResultsPlayer='Jalen Coker', Player='Jalen Coker', _score=nan
-2025-11-07 20:00:40,499 - INFO - MATCHED: ResultsPlayer='Christian Kirk', Player='Christian Kirk', _score=nan
-2025-11-07 20:00:40,500 - INFO - MATCHED: ResultsPlayer='Pat Bryant', Player='Pat Bryant', _score=nan
-2025-11-07 20:00:40,500 - INFO - MATCHED: ResultsPlayer='Jalen Nailor', Player='Jalen Nailor', _score=nan
-2025-11-07 20:00:40,500 - INFO - MATCHED: ResultsPlayer='Dawson Knox', Player='Dawson Knox', _score=nan
-2025-11-07 20:00:40,500 - INFO - MATCHED: ResultsPlayer='Rashid Shaheed', Player='Rashid Shaheed', _score=nan
-2025-11-07 20:00:40,500 - INFO - MATCHED: ResultsPlayer='Tony Pollard', Player='Tony Pollard', _score=nan
-2025-11-07 20:00:40,501 - INFO - MATCHED: ResultsPlayer='Noah Gray', Player='Noah Gray', _score=nan
-2025-11-07 20:00:40,501 - INFO - MATCHED: ResultsPlayer='Gunnar Helm', Player='Gunnar Helm', _score=nan
-2025-11-07 20:00:40,502 - INFO - MATCHED: ResultsPlayer='Aaron Jones Sr.', Player='Aaron Jones Sr.', _score=nan
-2025-11-07 20:00:40,503 - INFO - MATCHED: ResultsPlayer='Van Jefferson', Player='Van Jefferson', _score=nan
-2025-11-07 20:00:40,503 - INFO - MATCHED: ResultsPlayer='Cam Ward', Player='Cam Ward', _score=nan
-2025-11-07 20:00:40,504 - INFO - MATCHED: ResultsPlayer='Tyquan Thornton', Player='Tyquan Thornton', _score=nan
-2025-11-07 20:00:40,504 - INFO - MATCHED: ResultsPlayer='DeMario Douglas', Player='DeMario Douglas', _score=nan
-2025-11-07 20:00:40,504 - INFO - MATCHED: ResultsPlayer='Jaylin Noel', Player='Jaylin Noel', _score=nan
-2025-11-07 20:00:40,504 - INFO - MATCHED: ResultsPlayer='Tre' Harris', Player='Tre' Harris', _score=nan
-2025-11-07 20:00:40,505 - INFO - MATCHED: ResultsPlayer='Chig Okonkwo', Player='Chig Okonkwo', _score=nan
-2025-11-07 20:00:40,505 - INFO - MATCHED: ResultsPlayer='Jake Tonges', Player='Jake Tonges', _score=nan
-2025-11-07 20:00:40,505 - INFO - MATCHED: ResultsPlayer='Jayden Higgins', Player='Jayden Higgins', _score=nan
-2025-11-07 20:00:40,505 - INFO - MATCHED: ResultsPlayer='Emanuel Wilson', Player='Emanuel Wilson', _score=nan
-2025-11-07 20:00:40,505 - INFO - MATCHED: ResultsPlayer='Kenneth Gainwell', Player='Kenneth Gainwell', _score=nan
-2025-11-07 20:00:40,506 - INFO - MATCHED: ResultsPlayer='Samaje Perine', Player='Samaje Perine', _score=nan
-2025-11-07 20:00:40,506 - INFO - MATCHED: ResultsPlayer='Tyler Lockett', Player='Tyler Lockett', _score=nan
-2025-11-07 20:00:40,506 - INFO - MATCHED: ResultsPlayer='Chuba Hubbard', Player='Chuba Hubbard', _score=nan
-2025-11-07 20:00:40,506 - INFO - MATCHED: ResultsPlayer='Andrei Iosivas', Player='Andrei Iosivas', _score=nan
-2025-11-07 20:00:40,507 - INFO - MATCHED: ResultsPlayer='Elijah Moore', Player='Elijah Moore', _score=nan
-2025-11-07 20:00:40,508 - INFO - MATCHED: ResultsPlayer='Terrell Jennings', Player='Terrell Jennings', _score=nan
-2025-11-07 20:00:40,508 - INFO - MATCHED: ResultsPlayer='Nick Chubb', Player='Nick Chubb', _score=nan
-2025-11-07 20:00:40,509 - INFO - MATCHED: ResultsPlayer='Austin Hooper', Player='Austin Hooper', _score=nan
-2025-11-07 20:00:40,509 - INFO - MATCHED: ResultsPlayer='Alvin Kamara', Player='Alvin Kamara', _score=nan
-2025-11-07 20:00:40,509 - INFO - MATCHED: ResultsPlayer='Demarcus Robinson', Player='Demarcus Robinson', _score=nan
-2025-11-07 20:00:40,511 - INFO - MATCHED: ResultsPlayer='Jordan Mason', Player='Jordan Mason', _score=nan
-2025-11-07 20:00:40,511 - INFO - MATCHED: ResultsPlayer='Bryce Young', Player='Bryce Young', _score=nan
-2025-11-07 20:00:40,512 - INFO - MATCHED: ResultsPlayer='Darnell Washington', Player='Darnell Washington', _score=nan
-2025-11-07 20:00:40,512 - INFO - MATCHED: ResultsPlayer='Jordan Whittington', Player='Jordan Whittington', _score=nan
-2025-11-07 20:00:40,512 - INFO - MATCHED: ResultsPlayer='Devin Singletary', Player='Devin Singletary', _score=nan
-2025-11-07 20:00:40,512 - INFO - MATCHED: ResultsPlayer='Tommy Tremble', Player='Tommy Tremble', _score=nan
-2025-11-07 20:00:40,512 - INFO - MATCHED: ResultsPlayer='Bhayshul Tuten', Player='Bhayshul Tuten', _score=nan
-2025-11-07 20:00:40,513 - INFO - MATCHED: ResultsPlayer='Blake Corum', Player='Blake Corum', _score=nan
-2025-11-07 20:00:40,513 - INFO - MATCHED: ResultsPlayer='Adonai Mitchell', Player='Adonai Mitchell', _score=nan
-2025-11-07 20:00:40,513 - INFO - MATCHED: ResultsPlayer='Curtis Samuel', Player='Curtis Samuel', _score=nan
-2025-11-07 20:00:40,513 - INFO - MATCHED: ResultsPlayer='Terrance Ferguson', Player='Terrance Ferguson', _score=nan
-2025-11-07 20:00:40,513 - INFO - MATCHED: ResultsPlayer='Michael Mayer', Player='Michael Mayer', _score=nan
-2025-11-07 20:00:40,513 - INFO - MATCHED: ResultsPlayer='Brandin Cooks', Player='Brandin Cooks', _score=nan
-2025-11-07 20:00:40,514 - INFO - MATCHED: ResultsPlayer='Lil'Jordan Humphrey', Player='Lil'Jordan Humphrey', _score=nan
-2025-11-07 20:00:40,514 - INFO - MATCHED: ResultsPlayer='Isaac TeSlaa', Player='Isaac TeSlaa', _score=nan
-2025-11-07 20:00:40,514 - INFO - MATCHED: ResultsPlayer='Tyler Allgeier', Player='Tyler Allgeier', _score=nan
-2025-11-07 20:00:40,514 - INFO - MATCHED: ResultsPlayer='Mitchell Evans', Player='Mitchell Evans', _score=nan
-2025-11-07 20:00:40,514 - INFO - MATCHED: ResultsPlayer='Dont'e Thornton Jr.', Player='Dont'e Thornton Jr.', _score=nan
-2025-11-07 20:00:40,514 - INFO - MATCHED: ResultsPlayer='Devin Neal', Player='Devin Neal', _score=nan
-2025-11-07 20:00:40,515 - INFO - MATCHED: ResultsPlayer='Kalif Raymond', Player='Kalif Raymond', _score=nan
-2025-11-07 20:00:40,515 - INFO - MATCHED: ResultsPlayer='Brock Wright', Player='Brock Wright', _score=nan
-2025-11-07 20:00:40,515 - INFO - MATCHED: ResultsPlayer='Jaret Patterson', Player='Jaret Patterson', _score=nan
-2025-11-07 20:00:40,515 - INFO - MATCHED: ResultsPlayer='Jack Bech', Player='Jack Bech', _score=nan
-2025-11-07 20:00:40,515 - INFO - MATCHED: ResultsPlayer='Malik Heath', Player='Malik Heath', _score=nan
-2025-11-07 20:00:40,516 - INFO - MATCHED: ResultsPlayer='Brian Robinson Jr.', Player='Brian Robinson Jr.', _score=nan
-2025-11-07 20:00:40,516 - INFO - MATCHED: ResultsPlayer='Adam Thielen', Player='Adam Thielen', _score=nan
-2025-11-07 20:00:40,516 - INFO - MATCHED: ResultsPlayer='Savion Williams', Player='Savion Williams', _score=nan
-2025-11-07 20:00:40,516 - INFO - MATCHED: ResultsPlayer='Ty Johnson', Player='Ty Johnson', _score=nan
-2025-11-07 20:00:40,516 - INFO - MATCHED: ResultsPlayer='Tanner Hudson', Player='Tanner Hudson', _score=nan
-2025-11-07 20:00:40,516 - INFO - MATCHED: ResultsPlayer='Tyrell Shavers', Player='Tyrell Shavers', _score=nan
-2025-11-07 20:00:40,517 - INFO - MATCHED: ResultsPlayer='Kyle Juszczyk', Player='Kyle Juszczyk', _score=nan
-2025-11-07 20:00:40,517 - INFO - MATCHED: ResultsPlayer='Braxton Berrios', Player='Braxton Berrios', _score=nan
-2025-11-07 20:00:40,517 - INFO - MATCHED: ResultsPlayer='Devaughn Vele', Player='Devaughn Vele', _score=nan
-2025-11-07 20:00:40,517 - INFO - MATCHED: ResultsPlayer='Ray Davis', Player='Ray Davis', _score=nan
-2025-11-07 20:00:40,517 - INFO - MATCHED: ResultsPlayer='Spencer Rattler', Player='Spencer Rattler', _score=nan
-2025-11-07 20:00:40,517 - INFO - MATCHED: ResultsPlayer='Johnny Mundt', Player='Johnny Mundt', _score=nan
-2025-11-07 20:00:40,518 - INFO - MATCHED: ResultsPlayer='Chris Brooks', Player='Chris Brooks', _score=nan
-2025-11-07 20:00:40,519 - INFO - MATCHED: ResultsPlayer='Jackson Hawes', Player='Jackson Hawes', _score=nan
-2025-11-07 20:00:40,519 - INFO - MATCHED: ResultsPlayer='Trevor Etienne', Player='Trevor Etienne', _score=nan
-2025-11-07 20:00:40,520 - INFO - MATCHED: ResultsPlayer='Jake Browning', Player='Jake Browning', _score=nan
-2025-11-07 20:00:40,520 - INFO - MATCHED: ResultsPlayer='Davis Allen', Player='Davis Allen', _score=nan
-2025-11-07 20:00:40,521 - INFO - MATCHED: ResultsPlayer='Kaleb Johnson', Player='Kaleb Johnson', _score=nan
-2025-11-07 20:00:40,521 - INFO - MATCHED: ResultsPlayer='Kirk Cousins', Player='Kirk Cousins', _score=nan
-2025-11-07 20:00:40,521 - INFO - MATCHED: ResultsPlayer='Ameer Abdullah', Player='Ameer Abdullah', _score=nan
-2025-11-07 20:00:40,521 - INFO - MATCHED: ResultsPlayer='Zavier Scott', Player='Zavier Scott', _score=nan
-2025-11-07 20:00:40,521 - INFO - MATCHED: ResultsPlayer='Colby Parkinson', Player='Colby Parkinson', _score=nan
-2025-11-07 20:00:40,522 - INFO - MATCHED: ResultsPlayer='Luke Musgrave', Player='Luke Musgrave', _score=nan
-2025-11-07 20:00:40,522 - INFO - MATCHED: ResultsPlayer='Adam Trautman', Player='Adam Trautman', _score=nan
-2025-11-07 20:00:40,522 - INFO - MATCHED: ResultsPlayer='Mo Alie-Cox', Player='Mo Alie-Cox', _score=nan
-2025-11-07 20:00:40,522 - INFO - MATCHED: ResultsPlayer='Jordan Watkins', Player='Jordan Watkins', _score=nan
-2025-11-07 20:00:40,522 - INFO - MATCHED: ResultsPlayer='Raheem Mostert', Player='Raheem Mostert', _score=nan
-2025-11-07 20:00:40,523 - INFO - MATCHED: ResultsPlayer='Jimmy Horn Jr.', Player='Jimmy Horn Jr.', _score=nan
-2025-11-07 20:00:40,523 - INFO - MATCHED: ResultsPlayer='Devin Duvernay', Player='Devin Duvernay', _score=nan
-2025-11-07 20:00:40,523 - INFO - MATCHED: ResultsPlayer='Ashton Dulin', Player='Ashton Dulin', _score=nan
-2025-11-07 20:00:40,523 - INFO - MATCHED: ResultsPlayer='Harrison Bryant', Player='Harrison Bryant', _score=nan
-2025-11-07 20:00:40,524 - INFO - MATCHED: ResultsPlayer='LeQuint Allen Jr.', Player='LeQuint Allen Jr.', _score=nan
-2025-11-07 20:00:40,524 - INFO - MATCHED: ResultsPlayer='Kyle Williams', Player='Kyle Williams', _score=nan
-2025-11-07 20:00:40,524 - INFO - MATCHED: ResultsPlayer='John FitzPatrick', Player='John FitzPatrick', _score=nan
-2025-11-07 20:00:40,524 - INFO - MATCHED: ResultsPlayer='David Sills V', Player='David Sills V', _score=nan
-2025-11-07 20:00:40,524 - INFO - MATCHED: ResultsPlayer='Drew Sample', Player='Drew Sample', _score=nan
-2025-11-07 20:00:40,525 - INFO - MATCHED: ResultsPlayer='Beaux Collins', Player='Beaux Collins', _score=nan
-2025-11-07 20:00:40,525 - INFO - MATCHED: ResultsPlayer='Konata Mumpfield', Player='Konata Mumpfield', _score=nan
-2025-11-07 20:00:40,525 - INFO - MATCHED: ResultsPlayer='Ben Skowronek', Player='Ben Skowronek', _score=nan
-2025-11-07 20:00:40,525 - INFO - MATCHED: ResultsPlayer='Luke Farrell', Player='Luke Farrell', _score=nan
-2025-11-07 20:00:40,525 - INFO - MATCHED: ResultsPlayer='Skyy Moore', Player='Skyy Moore', _score=nan
-2025-11-07 20:00:40,526 - INFO - MATCHED: ResultsPlayer='KhaDarel Hodge', Player='KhaDarel Hodge', _score=nan
-2025-11-07 20:00:40,526 - INFO - MATCHED: ResultsPlayer='Chris Manhertz', Player='Chris Manhertz', _score=nan
-2025-11-07 20:00:40,526 - INFO - MATCHED: ResultsPlayer='Connor Heyward', Player='Connor Heyward', _score=nan
-2025-11-07 20:00:40,526 - INFO - MATCHED: ResultsPlayer='Xavier Smith', Player='Xavier Smith', _score=nan
-2025-11-07 20:00:40,526 - INFO - MATCHED: ResultsPlayer='Foster Moreau', Player='Foster Moreau', _score=nan
-2025-11-07 20:00:40,526 - INFO - MATCHED: ResultsPlayer='Tyler Badie', Player='Tyler Badie', _score=nan
-2025-11-07 20:00:40,527 - INFO - MATCHED: ResultsPlayer='Brycen Tremayne', Player='Brycen Tremayne', _score=nan
-2025-11-07 20:00:40,527 - INFO - MATCHED: ResultsPlayer='Riley Leonard', Player='Riley Leonard', _score=nan
-2025-11-07 20:00:40,527 - INFO - MATCHED: ResultsPlayer='Mason Rudolph', Player='Mason Rudolph', _score=nan
-2025-11-07 20:00:40,527 - INFO - MATCHED: ResultsPlayer='Julius Chestnut', Player='Julius Chestnut', _score=nan
-2025-11-07 20:00:40,527 - INFO - MATCHED: ResultsPlayer='Tahj Brooks', Player='Tahj Brooks', _score=nan
-2025-11-07 20:00:40,528 - INFO - MATCHED: ResultsPlayer='D'Andre Swift', Player='nan', _score=nan
-2025-11-07 20:00:40,528 - INFO - MATCHED: ResultsPlayer='Marquez Valdes-Scantling', Player='nan', _score=nan
-2025-11-07 20:00:40,528 - INFO - MATCHED: ResultsPlayer='Ray-Ray McCloud III', Player='nan', _score=nan
-2025-11-07 20:00:40,528 - INFO - MATCHED: ResultsPlayer='Travis Homer', Player='nan', _score=nan
-2025-11-07 20:00:40,528 - INFO - MATCHED: ResultsPlayer='Travis Hunter', Player='nan', _score=nan
-2025-11-07 20:00:40,529 - INFO - MATCHED: ResultsPlayer='Albert Okwuegbunam Jr.', Player='nan', _score=nan
-2025-11-07 20:00:40,529 - INFO - MATCHED: ResultsPlayer='Jalin Hyatt', Player='nan', _score=nan
-2025-11-07 20:00:40,529 - INFO - MATCHED: ResultsPlayer='Gabe Davis', Player='nan', _score=nan
-2025-11-07 20:00:40,529 - INFO - MATCHED: ResultsPlayer='Brock Purdy', Player='nan', _score=nan
-2025-11-07 20:00:40,529 - INFO - MATCHED: ResultsPlayer='Clyde Edwards-Helaire', Player='nan', _score=nan
-2025-11-07 20:00:40,530 - INFO - MATCHED: ResultsPlayer='Hunter Renfrow', Player='nan', _score=nan
-2025-11-07 20:00:40,530 - INFO - MATCHED: ResultsPlayer='Rhamondre Stevenson', Player='nan', _score=nan
-2025-11-07 20:00:40,530 - INFO - MATCHED: ResultsPlayer='Brittain Brown', Player='nan', _score=nan
-2025-11-07 20:00:40,530 - INFO - MATCHED: ResultsPlayer='Isiah Pacheco', Player='nan', _score=nan
-2025-11-07 20:00:40,530 - INFO - MATCHED: ResultsPlayer='D'Ernest Johnson', Player='nan', _score=nan
-2025-11-07 20:00:40,531 - INFO - MATCHED: ResultsPlayer='Marcedes Lewis', Player='nan', _score=nan
-2025-11-07 20:00:40,531 - INFO - MATCHED: ResultsPlayer='Thomas Fidone II', Player='nan', _score=nan
-2025-11-07 20:00:40,531 - INFO - MATCHED: ResultsPlayer='Ben Sims', Player='nan', _score=nan
-2025-11-07 20:00:40,531 - INFO - MATCHED: ResultsPlayer='Ricky Pearsall', Player='nan', _score=nan
-2025-11-07 20:00:40,531 - INFO - MATCHED: ResultsPlayer='Jahdae Walker', Player='nan', _score=nan
-2025-11-07 20:00:40,532 - INFO - MATCHED: ResultsPlayer='Nikko Remigio', Player='nan', _score=nan
-2025-11-07 20:00:40,532 - INFO - MATCHED: ResultsPlayer='Austin Trammell', Player='nan', _score=nan
-2025-11-07 20:00:40,532 - INFO - MATCHED: ResultsPlayer='Jayden Reed', Player='nan', _score=nan
-2025-11-07 20:00:40,533 - INFO - MATCHED: ResultsPlayer='Will Dissly', Player='nan', _score=nan
-2025-11-07 20:00:40,533 - INFO - MATCHED: ResultsPlayer='Trayveon Williams', Player='nan', _score=nan
-2025-11-07 20:00:40,533 - INFO - MATCHED: ResultsPlayer='KeAndre Lambert-Smith', Player='nan', _score=nan
-2025-11-07 20:00:40,534 - INFO - MATCHED: ResultsPlayer='Kristian Wilkerson', Player='nan', _score=nan
-2025-11-07 20:00:40,534 - INFO - MATCHED: ResultsPlayer='Tyler Conklin', Player='nan', _score=nan
-2025-11-07 20:00:40,534 - INFO - MATCHED: ResultsPlayer='Ian Thomas', Player='nan', _score=nan
-2025-11-07 20:00:40,534 - INFO - MATCHED: ResultsPlayer='Ben Yurosek', Player='nan', _score=nan
-2025-11-07 20:00:40,534 - INFO - MATCHED: ResultsPlayer='Ja'seem Reed', Player='nan', _score=nan
-2025-11-07 20:00:40,536 - INFO - MATCHED: ResultsPlayer='Cam Akers', Player='nan', _score=nan
-2025-11-07 20:00:40,536 - INFO - MATCHED: ResultsPlayer='Elijah Mitchell', Player='nan', _score=nan
-2025-11-07 20:00:40,537 - INFO - MATCHED: ResultsPlayer='Jimmy Holiday', Player='nan', _score=nan
-2025-11-07 20:00:40,537 - INFO - MATCHED: ResultsPlayer='Brandon Aiyuk', Player='nan', _score=nan
-2025-11-07 20:00:40,537 - INFO - MATCHED: ResultsPlayer='Brennan Presley', Player='nan', _score=nan
-2025-11-07 20:00:40,538 - INFO - MATCHED: ResultsPlayer='Hassan Haskins', Player='nan', _score=nan
-2025-11-07 20:00:40,538 - INFO - MATCHED: ResultsPlayer='Robert Tonyan', Player='nan', _score=nan
-2025-11-07 20:00:40,538 - INFO - MATCHED: ResultsPlayer='Luther Burden III', Player='nan', _score=nan
-2025-11-07 20:00:40,538 - INFO - MATCHED: ResultsPlayer='Ronnie Rivers', Player='nan', _score=nan
-2025-11-07 20:00:40,539 - INFO - MATCHED: ResultsPlayer='Durham Smythe', Player='nan', _score=nan
-2025-11-07 20:00:40,539 - INFO - MATCHED: ResultsPlayer='Tre Watson', Player='nan', _score=nan
-2025-11-07 20:00:40,539 - INFO - MATCHED: ResultsPlayer='Miles Boykin', Player='nan', _score=nan
-2025-11-07 20:00:40,539 - INFO - MATCHED: ResultsPlayer='Jordan Akins', Player='nan', _score=nan
-2025-11-07 20:00:40,539 - INFO - MATCHED: ResultsPlayer='Carson Steele', Player='nan', _score=nan
-2025-11-07 20:00:40,539 - INFO - MATCHED: ResultsPlayer='Josh Whyle', Player='nan', _score=nan
-2025-11-07 20:00:40,540 - INFO - MATCHED: ResultsPlayer='Zamir White', Player='nan', _score=nan
-2025-11-07 20:00:40,540 - INFO - MATCHED: ResultsPlayer='Mitch Tinsley', Player='nan', _score=nan
-2025-11-07 20:00:40,540 - INFO - MATCHED: ResultsPlayer='Daniel Bellinger', Player='nan', _score=nan
-2025-11-07 20:00:40,540 - INFO - MATCHED: ResultsPlayer='D.J. Montgomery', Player='nan', _score=nan
-2025-11-07 20:00:40,540 - INFO - MATCHED: ResultsPlayer='Keaontay Ingram', Player='nan', _score=nan
-2025-11-07 20:00:40,540 - INFO - MATCHED: ResultsPlayer='Brenton Strange', Player='nan', _score=nan
-2025-11-07 20:00:40,541 - INFO - MATCHED: ResultsPlayer='Casey Washington', Player='nan', _score=nan
-2025-11-07 20:00:40,541 - INFO - MATCHED: ResultsPlayer='Calvin Ridley', Player='nan', _score=nan
-2025-11-07 20:00:40,541 - INFO - MATCHED: ResultsPlayer='Ulysses Bentley IV', Player='nan', _score=nan
-2025-11-07 20:00:40,541 - INFO - MATCHED: ResultsPlayer='Jason Brownlee', Player='nan', _score=nan
-2025-11-07 20:00:40,541 - INFO - MATCHED: ResultsPlayer='Anthony Tyus III', Player='nan', _score=nan
-2025-11-07 20:00:40,541 - INFO - MATCHED: ResultsPlayer='Audric Estime', Player='nan', _score=nan
-2025-11-07 20:00:40,542 - INFO - MATCHED: ResultsPlayer='Laquon Treadwell', Player='nan', _score=nan
-2025-11-07 20:00:40,542 - INFO - MATCHED: ResultsPlayer='Efton Chism III', Player='nan', _score=nan
-2025-11-07 20:00:40,542 - INFO - MATCHED: ResultsPlayer='Malik Turner', Player='nan', _score=nan
-2025-11-07 20:00:40,542 - INFO - MATCHED: ResultsPlayer='Scott Matlock', Player='nan', _score=nan
-2025-11-07 20:00:40,542 - INFO - MATCHED: ResultsPlayer='Marvin Mims Jr.', Player='nan', _score=nan
-2025-11-07 20:00:40,542 - INFO - MATCHED: ResultsPlayer='Nick Vannett', Player='nan', _score=nan
-2025-11-07 20:00:40,543 - INFO - MATCHED: ResultsPlayer='Emory Jones', Player='nan', _score=nan
-2025-11-07 20:00:40,543 - INFO - MATCHED: ResultsPlayer='Frank Gore Jr.', Player='nan', _score=nan
-2025-11-07 20:00:40,543 - INFO - MATCHED: ResultsPlayer='Dontayvion Wicks', Player='nan', _score=nan
-2025-11-07 20:00:40,543 - INFO - MATCHED: ResultsPlayer='Moliki Matavao', Player='nan', _score=nan
-2025-11-07 20:00:40,543 - INFO - MATCHED: ResultsPlayer='DJ Uiagalelei', Player='nan', _score=nan
-2025-11-07 20:00:40,543 - INFO - MATCHED: ResultsPlayer='Jared Wayne', Player='nan', _score=nan
-2025-11-07 20:00:40,543 - INFO - MATCHED: ResultsPlayer='John Jiles', Player='nan', _score=nan
-2025-11-07 20:00:40,544 - INFO - MATCHED: ResultsPlayer='Trent Taylor', Player='nan', _score=nan
-2025-11-07 20:00:40,544 - INFO - MATCHED: ResultsPlayer='Coleman Owen', Player='nan', _score=nan
-2025-11-07 20:00:40,544 - INFO - MATCHED: ResultsPlayer='Jacob Saylors', Player='nan', _score=nan
-2025-11-07 20:00:40,544 - INFO - MATCHED: ResultsPlayer='Stetson Bennett IV', Player='nan', _score=nan
-2025-11-07 20:00:40,544 - INFO - MATCHED: ResultsPlayer='Max Hurleman', Player='nan', _score=nan
-2025-11-07 20:00:40,545 - INFO - MATCHED: ResultsPlayer='Dontae Fleming', Player='nan', _score=nan
-2025-11-07 20:00:40,545 - INFO - MATCHED: ResultsPlayer='Cody Schrader', Player='nan', _score=nan
-2025-11-07 20:00:40,545 - INFO - MATCHED: ResultsPlayer='A.T. Perry', Player='nan', _score=nan
-2025-11-07 20:00:40,545 - INFO - MATCHED: ResultsPlayer='Joshua Simon', Player='nan', _score=nan
-2025-11-07 20:00:40,545 - INFO - MATCHED: ResultsPlayer='Stephen Gosnell', Player='nan', _score=nan
-2025-11-07 20:00:40,546 - INFO - MATCHED: ResultsPlayer='Reggie Gilliam', Player='nan', _score=nan
-2025-11-07 20:00:40,546 - INFO - MATCHED: ResultsPlayer='Deven Thompkins', Player='nan', _score=nan
-2025-11-07 20:00:40,546 - INFO - MATCHED: ResultsPlayer='Dante Miller', Player='nan', _score=nan
-2025-11-07 20:00:40,546 - INFO - MATCHED: ResultsPlayer='Isaac Guerendo', Player='nan', _score=nan
-2025-11-07 20:00:40,546 - INFO - MATCHED: ResultsPlayer='Clayton Tune', Player='nan', _score=nan
-2025-11-07 20:00:40,547 - INFO - MATCHED: ResultsPlayer='Ross Dwelley', Player='nan', _score=nan
-2025-11-07 20:00:40,547 - INFO - MATCHED: ResultsPlayer='Patrick Herbert', Player='nan', _score=nan
-2025-11-07 20:00:40,547 - INFO - MATCHED: ResultsPlayer='Thomas Odukoya', Player='nan', _score=nan
-2025-11-07 20:00:40,547 - INFO - MATCHED: ResultsPlayer='MarShawn Lloyd', Player='nan', _score=nan
-2025-11-07 20:00:40,547 - INFO - MATCHED: ResultsPlayer='Myles Price', Player='nan', _score=nan
-2025-11-07 20:00:40,548 - INFO - MATCHED: ResultsPlayer='Nikola Kalinic', Player='nan', _score=nan
-2025-11-07 20:00:40,548 - INFO - MATCHED: ResultsPlayer='Zach Horton', Player='nan', _score=nan
-2025-11-07 20:00:40,548 - INFO - MATCHED: ResultsPlayer='Quintez Cephus', Player='nan', _score=nan
-2025-11-07 20:00:40,548 - INFO - MATCHED: ResultsPlayer='Ke'Shawn Williams', Player='nan', _score=nan
-2025-11-07 20:00:40,548 - INFO - MATCHED: ResultsPlayer='Cam Skattebo', Player='nan', _score=nan
-2025-11-07 20:00:40,548 - INFO - MATCHED: ResultsPlayer='Bryce Pierre', Player='nan', _score=nan
-2025-11-07 20:00:40,548 - INFO - Merge Summary: Total=345, Matched=345, Unmatched=0
-2025-11-07 20:00:40,549 - INFO - df_final columns: ['ResultsPlayer', 'ActualDrafted', 'ActualFPTS', 'Unnamed: 0', 'Team', 'Pos', 'ProjectedFPTS', 'FPTS', 'BiasApplied', 'AdjustmentPercent', 'Lambda', 'Sample_count', 'k', 'fantasyPointsRank', 'FPTS_Rank', 'Salary', 'Depth', 'Player', '_score']
+2025-11-07 22:32:19,319 - INFO - ResultsPlayer changed at row 8: 'Rams ' \u2192 'LAR'
+2025-11-07 22:32:19,319 - INFO - ResultsPlayer changed at row 24: 'Texans ' \u2192 'HOU'
+2025-11-07 22:32:19,319 - INFO - ResultsPlayer changed at row 31: 'Chargers ' \u2192 'LAC'
+2025-11-07 22:32:19,319 - INFO - ResultsPlayer changed at row 37: 'Lions ' \u2192 'DET'
+2025-11-07 22:32:19,319 - INFO - ResultsPlayer changed at row 40: 'Broncos ' \u2192 'DEN'
+2025-11-07 22:32:19,319 - INFO - ResultsPlayer changed at row 44: 'Jaguars ' \u2192 'JAX'
+2025-11-07 22:32:19,319 - INFO - ResultsPlayer changed at row 48: 'Giants ' \u2192 'NYG'
+2025-11-07 22:32:19,320 - INFO - ResultsPlayer changed at row 53: 'Raiders ' \u2192 'LV'
+2025-11-07 22:32:19,320 - INFO - ResultsPlayer changed at row 54: 'Falcons ' \u2192 'ATL'
+2025-11-07 22:32:19,320 - INFO - ResultsPlayer changed at row 63: 'Packers ' \u2192 'GB'
+2025-11-07 22:32:19,320 - INFO - ResultsPlayer changed at row 65: 'Patriots ' \u2192 'NE'
+2025-11-07 22:32:19,320 - INFO - ResultsPlayer changed at row 87: 'Bears ' \u2192 'CHI'
+2025-11-07 22:32:19,320 - INFO - ResultsPlayer changed at row 97: 'Panthers ' \u2192 'CAR'
+2025-11-07 22:32:19,320 - INFO - ResultsPlayer changed at row 103: 'Vikings ' \u2192 'MIN'
+2025-11-07 22:32:19,320 - INFO - ResultsPlayer changed at row 106: 'Saints ' \u2192 'NO'
+2025-11-07 22:32:19,320 - INFO - ResultsPlayer changed at row 109: '49ers ' \u2192 'SF'
+2025-11-07 22:32:19,320 - INFO - ResultsPlayer changed at row 110: 'Titans ' \u2192 'TEN'
+2025-11-07 22:32:19,321 - INFO - ResultsPlayer changed at row 113: 'Steelers ' \u2192 'PIT'
+2025-11-07 22:32:19,321 - INFO - ResultsPlayer changed at row 115: 'Bills ' \u2192 'BUF'
+2025-11-07 22:32:19,321 - INFO - ResultsPlayer changed at row 117: 'Bengals ' \u2192 'CIN'
+2025-11-07 22:32:19,321 - INFO - ResultsPlayer changed at row 120: 'Colts ' \u2192 'IND'
+2025-11-07 22:32:19,321 - INFO - ResultsPlayer changed at row 137: 'Chiefs ' \u2192 'KC'
+2025-11-07 22:32:19,346 - INFO - DST MATCHED: Player='GB', Team='GB' found in ResultsPlayer
+2025-11-07 22:32:19,346 - INFO - DST MATCHED: Player='LAR', Team='LAR' found in ResultsPlayer
+2025-11-07 22:32:19,346 - INFO - DST MATCHED: Player='LAC', Team='LAC' found in ResultsPlayer
+2025-11-07 22:32:19,346 - INFO - DST MATCHED: Player='DET', Team='DET' found in ResultsPlayer
+2025-11-07 22:32:19,347 - INFO - DST MATCHED: Player='NE', Team='NE' found in ResultsPlayer
+2025-11-07 22:32:19,347 - INFO - DST MATCHED: Player='IND', Team='IND' found in ResultsPlayer
+2025-11-07 22:32:19,347 - INFO - DST MATCHED: Player='SF', Team='SF' found in ResultsPlayer
+2025-11-07 22:32:19,347 - INFO - DST MATCHED: Player='JAX', Team='JAX' found in ResultsPlayer
+2025-11-07 22:32:19,347 - INFO - DST MATCHED: Player='DEN', Team='DEN' found in ResultsPlayer
+2025-11-07 22:32:19,348 - INFO - DST MATCHED: Player='CHI', Team='CHI' found in ResultsPlayer
+2025-11-07 22:32:19,348 - INFO - DST MATCHED: Player='KC', Team='KC' found in ResultsPlayer
+2025-11-07 22:32:19,348 - INFO - DST MATCHED: Player='HOU', Team='HOU' found in ResultsPlayer
+2025-11-07 22:32:19,348 - INFO - DST MATCHED: Player='BUF', Team='BUF' found in ResultsPlayer
+2025-11-07 22:32:19,348 - INFO - DST MATCHED: Player='PIT', Team='PIT' found in ResultsPlayer
+2025-11-07 22:32:19,348 - INFO - DST MATCHED: Player='CIN', Team='CIN' found in ResultsPlayer
+2025-11-07 22:32:19,349 - INFO - DST MATCHED: Player='ATL', Team='ATL' found in ResultsPlayer
+2025-11-07 22:32:19,349 - INFO - DST MATCHED: Player='LV', Team='LV' found in ResultsPlayer
+2025-11-07 22:32:19,350 - INFO - DST MATCHED: Player='NYG', Team='NYG' found in ResultsPlayer
+2025-11-07 22:32:19,352 - INFO - DST MATCHED: Player='TEN', Team='TEN' found in ResultsPlayer
+2025-11-07 22:32:19,352 - INFO - DST MATCHED: Player='MIN', Team='MIN' found in ResultsPlayer
+2025-11-07 22:32:19,352 - INFO - DST MATCHED: Player='NO', Team='NO' found in ResultsPlayer
+2025-11-07 22:32:19,353 - INFO - DST MATCHED: Player='CAR', Team='CAR' found in ResultsPlayer
+2025-11-07 22:32:19,353 - INFO - DST Summary: Total=22, Matched=22, Unmatched=0
+2025-11-07 22:32:19,353 - INFO - Matched DSTs: ['GB', 'LAR', 'LAC', 'DET', 'NE', 'IND', 'SF', 'JAX', 'DEN', 'CHI', 'KC', 'HOU', 'BUF', 'PIT', 'CIN', 'ATL', 'LV', 'NYG', 'TEN', 'MIN', 'NO', 'CAR']
+2025-11-07 22:32:19,353 - INFO - Unmatched DSTs: []
+2025-11-07 22:32:19,496 - INFO - MATCHED: ResultsPlayer='Kyle Monangai', Player='Kyle Monangai', _score=nan
+2025-11-07 22:32:19,497 - INFO - MATCHED: ResultsPlayer='Christian McCaffrey', Player='Christian McCaffrey', _score=nan
+2025-11-07 22:32:19,497 - INFO - MATCHED: ResultsPlayer='Ja'Marr Chase', Player='Ja'Marr Chase', _score=nan
+2025-11-07 22:32:19,497 - INFO - MATCHED: ResultsPlayer='Rashee Rice', Player='Rashee Rice', _score=nan
+2025-11-07 22:32:19,497 - INFO - MATCHED: ResultsPlayer='Kimani Vidal', Player='Kimani Vidal', _score=nan
+2025-11-07 22:32:19,497 - INFO - MATCHED: ResultsPlayer='DK Metcalf', Player='DK Metcalf', _score=nan
+2025-11-07 22:32:19,497 - INFO - MATCHED: ResultsPlayer='TreVeyon Henderson', Player='TreVeyon Henderson', _score=nan
+2025-11-07 22:32:19,498 - INFO - MATCHED: ResultsPlayer='Michael Pittman Jr.', Player='Michael Pittman Jr.', _score=nan
+2025-11-07 22:32:19,498 - INFO - MATCHED: ResultsPlayer='LAR', Player='LAR', _score=nan
+2025-11-07 22:32:19,498 - INFO - MATCHED: ResultsPlayer='Tyler Warren', Player='Tyler Warren', _score=nan
+2025-11-07 22:32:19,498 - INFO - MATCHED: ResultsPlayer='Puka Nacua', Player='Puka Nacua', _score=nan
+2025-11-07 22:32:19,498 - INFO - MATCHED: ResultsPlayer='Daniel Jones', Player='Daniel Jones', _score=nan
+2025-11-07 22:32:19,498 - INFO - MATCHED: ResultsPlayer='Kareem Hunt', Player='Kareem Hunt', _score=nan
+2025-11-07 22:32:19,498 - INFO - MATCHED: ResultsPlayer='Jahmyr Gibbs', Player='Jahmyr Gibbs', _score=nan
+2025-11-07 22:32:19,499 - INFO - MATCHED: ResultsPlayer='Tyrone Tracy Jr.', Player='Tyrone Tracy Jr.', _score=nan
+2025-11-07 22:32:19,499 - INFO - MATCHED: ResultsPlayer='Brian Thomas Jr.', Player='Brian Thomas Jr.', _score=nan
+2025-11-07 22:32:19,500 - INFO - MATCHED: ResultsPlayer='Brock Bowers', Player='Brock Bowers', _score=nan
+2025-11-07 22:32:19,500 - INFO - MATCHED: ResultsPlayer='Jauan Jennings', Player='Jauan Jennings', _score=nan
+2025-11-07 22:32:19,500 - INFO - MATCHED: ResultsPlayer='Jaxson Dart', Player='Jaxson Dart', _score=nan
+2025-11-07 22:32:19,500 - INFO - MATCHED: ResultsPlayer='Rome Odunze', Player='Rome Odunze', _score=nan
+2025-11-07 22:32:19,501 - INFO - MATCHED: ResultsPlayer='Parker Washington', Player='Parker Washington', _score=nan
+2025-11-07 22:32:19,501 - INFO - MATCHED: ResultsPlayer='Ladd McConkey', Player='Ladd McConkey', _score=nan
+2025-11-07 22:32:19,501 - INFO - MATCHED: ResultsPlayer='Wan'Dale Robinson', Player='Wan'Dale Robinson', _score=nan
+2025-11-07 22:32:19,501 - INFO - MATCHED: ResultsPlayer='Kyren Williams', Player='Kyren Williams', _score=nan
+2025-11-07 22:32:19,501 - INFO - MATCHED: ResultsPlayer='HOU', Player='HOU', _score=nan
+2025-11-07 22:32:19,501 - INFO - MATCHED: ResultsPlayer='Patrick Mahomes', Player='Patrick Mahomes', _score=nan
+2025-11-07 22:32:19,502 - INFO - MATCHED: ResultsPlayer='Jonathan Taylor', Player='Jonathan Taylor', _score=nan
+2025-11-07 22:32:19,502 - INFO - MATCHED: ResultsPlayer='Caleb Williams', Player='Caleb Williams', _score=nan
+2025-11-07 22:32:19,502 - INFO - MATCHED: ResultsPlayer='Amon-Ra St. Brown', Player='Amon-Ra St. Brown', _score=nan
+2025-11-07 22:32:19,502 - INFO - MATCHED: ResultsPlayer='George Kittle', Player='George Kittle', _score=nan
+2025-11-07 22:32:19,502 - INFO - MATCHED: ResultsPlayer='Travis Kelce', Player='Travis Kelce', _score=nan
+2025-11-07 22:32:19,502 - INFO - MATCHED: ResultsPlayer='LAC', Player='LAC', _score=nan
+2025-11-07 22:32:19,503 - INFO - MATCHED: ResultsPlayer='Theo Johnson', Player='Theo Johnson', _score=nan
+2025-11-07 22:32:19,503 - INFO - MATCHED: ResultsPlayer='Tucker Kraft', Player='Tucker Kraft', _score=nan
+2025-11-07 22:32:19,503 - INFO - MATCHED: ResultsPlayer='Jaylen Warren', Player='Jaylen Warren', _score=nan
+2025-11-07 22:32:19,503 - INFO - MATCHED: ResultsPlayer='Chase Brown', Player='Chase Brown', _score=nan
+2025-11-07 22:32:19,503 - INFO - MATCHED: ResultsPlayer='Jameson Williams', Player='Jameson Williams', _score=nan
+2025-11-07 22:32:19,503 - INFO - MATCHED: ResultsPlayer='DET', Player='DET', _score=nan
+2025-11-07 22:32:19,503 - INFO - MATCHED: ResultsPlayer='Kyle Pitts Sr.', Player='Kyle Pitts Sr.', _score=nan
+2025-11-07 22:32:19,504 - INFO - MATCHED: ResultsPlayer='Justin Jefferson', Player='Justin Jefferson', _score=nan
+2025-11-07 22:32:19,504 - INFO - MATCHED: ResultsPlayer='DEN', Player='DEN', _score=nan
+2025-11-07 22:32:19,504 - INFO - MATCHED: ResultsPlayer='Khalil Shakir', Player='Khalil Shakir', _score=nan
+2025-11-07 22:32:19,504 - INFO - MATCHED: ResultsPlayer='Josh Allen', Player='Josh Allen', _score=nan
+2025-11-07 22:32:19,504 - INFO - MATCHED: ResultsPlayer='Chimere Dike', Player='Chimere Dike', _score=nan
+2025-11-07 22:32:19,504 - INFO - MATCHED: ResultsPlayer='JAX', Player='JAX', _score=nan
+2025-11-07 22:32:19,505 - INFO - MATCHED: ResultsPlayer='Sam LaPorta', Player='Sam LaPorta', _score=nan
+2025-11-07 22:32:19,505 - INFO - MATCHED: ResultsPlayer='Alec Pierce', Player='Alec Pierce', _score=nan
+2025-11-07 22:32:19,505 - INFO - MATCHED: ResultsPlayer='Mac Jones', Player='Mac Jones', _score=nan
+2025-11-07 22:32:19,505 - INFO - MATCHED: ResultsPlayer='NYG', Player='NYG', _score=nan
+2025-11-07 22:32:19,505 - INFO - MATCHED: ResultsPlayer='James Cook III', Player='James Cook III', _score=nan
+2025-11-07 22:32:19,505 - INFO - MATCHED: ResultsPlayer='Jordan Addison', Player='Jordan Addison', _score=nan
+2025-11-07 22:32:19,505 - INFO - MATCHED: ResultsPlayer='Josh Jacobs', Player='Josh Jacobs', _score=nan
+2025-11-07 22:32:19,506 - INFO - MATCHED: ResultsPlayer='Dalton Kincaid', Player='Dalton Kincaid', _score=nan
+2025-11-07 22:32:19,506 - INFO - MATCHED: ResultsPlayer='LV', Player='LV', _score=nan
+2025-11-07 22:32:19,506 - INFO - MATCHED: ResultsPlayer='ATL', Player='ATL', _score=nan
+2025-11-07 22:32:19,506 - INFO - MATCHED: ResultsPlayer='Oronde Gadsden II', Player='Oronde Gadsden II', _score=nan
+2025-11-07 22:32:19,506 - INFO - MATCHED: ResultsPlayer='Jared Goff', Player='Jared Goff', _score=nan
+2025-11-07 22:32:19,506 - INFO - MATCHED: ResultsPlayer='Matthew Stafford', Player='Matthew Stafford', _score=nan
+2025-11-07 22:32:19,506 - INFO - MATCHED: ResultsPlayer='Olamide Zaccheaus', Player='Olamide Zaccheaus', _score=nan
+2025-11-07 22:32:19,507 - INFO - MATCHED: ResultsPlayer='DJ Moore', Player='DJ Moore', _score=nan
+2025-11-07 22:32:19,507 - INFO - MATCHED: ResultsPlayer='Travis Etienne Jr.', Player='Travis Etienne Jr.', _score=nan
+2025-11-07 22:32:19,507 - INFO - MATCHED: ResultsPlayer='Darius Slayton', Player='Darius Slayton', _score=nan
+2025-11-07 22:32:19,507 - INFO - MATCHED: ResultsPlayer='Keenan Allen', Player='Keenan Allen', _score=nan
+2025-11-07 22:32:19,507 - INFO - MATCHED: ResultsPlayer='GB', Player='GB', _score=nan
+2025-11-07 22:32:19,507 - INFO - MATCHED: ResultsPlayer='Juwan Johnson', Player='Juwan Johnson', _score=nan
+2025-11-07 22:32:19,508 - INFO - MATCHED: ResultsPlayer='NE', Player='NE', _score=nan
+2025-11-07 22:32:19,508 - INFO - MATCHED: ResultsPlayer='Joe Flacco', Player='Joe Flacco', _score=nan
+2025-11-07 22:32:19,508 - INFO - MATCHED: ResultsPlayer='Tee Higgins', Player='Tee Higgins', _score=nan
+2025-11-07 22:32:19,508 - INFO - MATCHED: ResultsPlayer='Xavier Worthy', Player='Xavier Worthy', _score=nan
+2025-11-07 22:32:19,508 - INFO - MATCHED: ResultsPlayer='Drake London', Player='Drake London', _score=nan
+2025-11-07 22:32:19,508 - INFO - MATCHED: ResultsPlayer='Justin Herbert', Player='Justin Herbert', _score=nan
+2025-11-07 22:32:19,508 - INFO - MATCHED: ResultsPlayer='Josh Downs', Player='Josh Downs', _score=nan
+2025-11-07 22:32:19,509 - INFO - MATCHED: ResultsPlayer='Kayshon Boutte', Player='Kayshon Boutte', _score=nan
+2025-11-07 22:32:19,509 - INFO - MATCHED: ResultsPlayer='Drake Maye', Player='Drake Maye', _score=nan
+2025-11-07 22:32:19,509 - INFO - MATCHED: ResultsPlayer='Tre Tucker', Player='Tre Tucker', _score=nan
+2025-11-07 22:32:19,509 - INFO - MATCHED: ResultsPlayer='Christian Watson', Player='Christian Watson', _score=nan
+2025-11-07 22:32:19,509 - INFO - MATCHED: ResultsPlayer='Trevor Lawrence', Player='Trevor Lawrence', _score=nan
+2025-11-07 22:32:19,509 - INFO - MATCHED: ResultsPlayer='Dyami Brown', Player='Dyami Brown', _score=nan
+2025-11-07 22:32:19,509 - INFO - MATCHED: ResultsPlayer='Bijan Robinson', Player='Bijan Robinson', _score=nan
+2025-11-07 22:32:19,510 - INFO - MATCHED: ResultsPlayer='Hunter Henry', Player='Hunter Henry', _score=nan
+2025-11-07 22:32:19,510 - INFO - MATCHED: ResultsPlayer='Davante Adams', Player='Davante Adams', _score=nan
+2025-11-07 22:32:19,510 - INFO - MATCHED: ResultsPlayer='Stefon Diggs', Player='Stefon Diggs', _score=nan
+2025-11-07 22:32:19,510 - INFO - MATCHED: ResultsPlayer='T.J. Hockenson', Player='T.J. Hockenson', _score=nan
+2025-11-07 22:32:19,510 - INFO - MATCHED: ResultsPlayer='Nico Collins', Player='Nico Collins', _score=nan
+2025-11-07 22:32:19,511 - INFO - MATCHED: ResultsPlayer='Geno Smith', Player='Geno Smith', _score=nan
+2025-11-07 22:32:19,511 - INFO - MATCHED: ResultsPlayer='Romeo Doubs', Player='Romeo Doubs', _score=nan
+2025-11-07 22:32:19,511 - INFO - MATCHED: ResultsPlayer='Troy Franklin', Player='Troy Franklin', _score=nan
+2025-11-07 22:32:19,511 - INFO - MATCHED: ResultsPlayer='CHI', Player='CHI', _score=nan
+2025-11-07 22:32:19,511 - INFO - MATCHED: ResultsPlayer='J.J. McCarthy', Player='J.J. McCarthy', _score=nan
+2025-11-07 22:32:19,511 - INFO - MATCHED: ResultsPlayer='David Montgomery', Player='David Montgomery', _score=nan
+2025-11-07 22:32:19,512 - INFO - MATCHED: ResultsPlayer='Jordan Love', Player='Jordan Love', _score=nan
+2025-11-07 22:32:19,512 - INFO - MATCHED: ResultsPlayer='Keon Coleman', Player='Keon Coleman', _score=nan
+2025-11-07 22:32:19,512 - INFO - MATCHED: ResultsPlayer='Colston Loveland', Player='Colston Loveland', _score=nan
+2025-11-07 22:32:19,512 - INFO - MATCHED: ResultsPlayer='Chris Olave', Player='Chris Olave', _score=nan
+2025-11-07 22:32:19,512 - INFO - MATCHED: ResultsPlayer='Kendrick Bourne', Player='Kendrick Bourne', _score=nan
+2025-11-07 22:32:19,512 - INFO - MATCHED: ResultsPlayer='Ashton Jeanty', Player='Ashton Jeanty', _score=nan
+2025-11-07 22:32:19,512 - INFO - MATCHED: ResultsPlayer='Quentin Johnston', Player='Quentin Johnston', _score=nan
+2025-11-07 22:32:19,513 - INFO - MATCHED: ResultsPlayer='CAR', Player='CAR', _score=nan
+2025-11-07 22:32:19,513 - INFO - MATCHED: ResultsPlayer='Aaron Rodgers', Player='Aaron Rodgers', _score=nan
+2025-11-07 22:32:19,513 - INFO - MATCHED: ResultsPlayer='Jakobi Meyers', Player='Jakobi Meyers', _score=nan
+2025-11-07 22:32:19,513 - INFO - MATCHED: ResultsPlayer='Tetairoa McMillan', Player='Tetairoa McMillan', _score=nan
+2025-11-07 22:32:19,513 - INFO - MATCHED: ResultsPlayer='Calvin Austin III', Player='Calvin Austin III', _score=nan
+2025-11-07 22:32:19,513 - INFO - MATCHED: ResultsPlayer='Brashard Smith', Player='Brashard Smith', _score=nan
+2025-11-07 22:32:19,514 - INFO - MATCHED: ResultsPlayer='MIN', Player='MIN', _score=nan
+2025-11-07 22:32:19,514 - INFO - MATCHED: ResultsPlayer='Pat Freiermuth', Player='Pat Freiermuth', _score=nan
+2025-11-07 22:32:19,514 - INFO - MATCHED: ResultsPlayer='Jonnu Smith', Player='Jonnu Smith', _score=nan
+2025-11-07 22:32:19,514 - INFO - MATCHED: ResultsPlayer='NO', Player='NO', _score=nan
+2025-11-07 22:32:19,514 - INFO - MATCHED: ResultsPlayer='Rico Dowdle', Player='Rico Dowdle', _score=nan
+2025-11-07 22:32:19,514 - INFO - MATCHED: ResultsPlayer='Elic Ayomanor', Player='Elic Ayomanor', _score=nan
+2025-11-07 22:32:19,515 - INFO - MATCHED: ResultsPlayer='SF', Player='SF', _score=nan
+2025-11-07 22:32:19,515 - INFO - MATCHED: ResultsPlayer='TEN', Player='TEN', _score=nan
+2025-11-07 22:32:19,515 - INFO - MATCHED: ResultsPlayer='C.J. Stroud', Player='C.J. Stroud', _score=nan
+2025-11-07 22:32:19,516 - INFO - MATCHED: ResultsPlayer='Noah Fant', Player='Noah Fant', _score=nan
+2025-11-07 22:32:19,516 - INFO - MATCHED: ResultsPlayer='PIT', Player='PIT', _score=nan
+2025-11-07 22:32:19,516 - INFO - MATCHED: ResultsPlayer='Courtland Sutton', Player='Courtland Sutton', _score=nan
+2025-11-07 22:32:19,517 - INFO - MATCHED: ResultsPlayer='BUF', Player='BUF', _score=nan
+2025-11-07 22:32:19,517 - INFO - MATCHED: ResultsPlayer='Roman Wilson', Player='Roman Wilson', _score=nan
+2025-11-07 22:32:19,517 - INFO - MATCHED: ResultsPlayer='CIN', Player='CIN', _score=nan
+2025-11-07 22:32:19,517 - INFO - MATCHED: ResultsPlayer='J.K. Dobbins', Player='J.K. Dobbins', _score=nan
+2025-11-07 22:32:19,517 - INFO - MATCHED: ResultsPlayer='Matthew Golden', Player='Matthew Golden', _score=nan
+2025-11-07 22:32:19,518 - INFO - MATCHED: ResultsPlayer='IND', Player='IND', _score=nan
+2025-11-07 22:32:19,518 - INFO - MATCHED: ResultsPlayer='Darnell Mooney', Player='Darnell Mooney', _score=nan
+2025-11-07 22:32:19,518 - INFO - MATCHED: ResultsPlayer='Hollywood Brown', Player='Hollywood Brown', _score=nan
+2025-11-07 22:32:19,518 - INFO - MATCHED: ResultsPlayer='Michael Penix Jr.', Player='Michael Penix Jr.', _score=nan
+2025-11-07 22:32:19,518 - INFO - MATCHED: ResultsPlayer='Mack Hollins', Player='Mack Hollins', _score=nan
+2025-11-07 22:32:19,518 - INFO - MATCHED: ResultsPlayer='Evan Engram', Player='Evan Engram', _score=nan
+2025-11-07 22:32:19,518 - INFO - MATCHED: ResultsPlayer='Bo Nix', Player='Bo Nix', _score=nan
+2025-11-07 22:32:19,519 - INFO - MATCHED: ResultsPlayer='JuJu Smith-Schuster', Player='JuJu Smith-Schuster', _score=nan
+2025-11-07 22:32:19,519 - INFO - MATCHED: ResultsPlayer='Taysom Hill', Player='Taysom Hill', _score=nan
+2025-11-07 22:32:19,519 - INFO - MATCHED: ResultsPlayer='Xavier Hutchinson', Player='Xavier Hutchinson', _score=nan
+2025-11-07 22:32:19,519 - INFO - MATCHED: ResultsPlayer='Tyler Higbee', Player='Tyler Higbee', _score=nan
+2025-11-07 22:32:19,519 - INFO - MATCHED: ResultsPlayer='Woody Marks', Player='Woody Marks', _score=nan
+2025-11-07 22:32:19,519 - INFO - MATCHED: ResultsPlayer='Ja'Tavion Sanders', Player='Ja'Tavion Sanders', _score=nan
+2025-11-07 22:32:19,519 - INFO - MATCHED: ResultsPlayer='RJ Harvey', Player='RJ Harvey', _score=nan
+2025-11-07 22:32:19,520 - INFO - MATCHED: ResultsPlayer='Tyjae Spears', Player='Tyjae Spears', _score=nan
+2025-11-07 22:32:19,520 - INFO - MATCHED: ResultsPlayer='Cole Kmet', Player='Cole Kmet', _score=nan
+2025-11-07 22:32:19,520 - INFO - MATCHED: ResultsPlayer='Dalton Schultz', Player='Dalton Schultz', _score=nan
+2025-11-07 22:32:19,520 - INFO - MATCHED: ResultsPlayer='KC', Player='KC', _score=nan
+2025-11-07 22:32:19,520 - INFO - MATCHED: ResultsPlayer='Xavier Legette', Player='Xavier Legette', _score=nan
+2025-11-07 22:32:19,520 - INFO - MATCHED: ResultsPlayer='Tyler Shough', Player='Tyler Shough', _score=nan
+2025-11-07 22:32:19,521 - INFO - MATCHED: ResultsPlayer='Hunter Long', Player='Hunter Long', _score=nan
+2025-11-07 22:32:19,521 - INFO - MATCHED: ResultsPlayer='Jalen Coker', Player='Jalen Coker', _score=nan
+2025-11-07 22:32:19,521 - INFO - MATCHED: ResultsPlayer='Christian Kirk', Player='Christian Kirk', _score=nan
+2025-11-07 22:32:19,521 - INFO - MATCHED: ResultsPlayer='Pat Bryant', Player='Pat Bryant', _score=nan
+2025-11-07 22:32:19,521 - INFO - MATCHED: ResultsPlayer='Jalen Nailor', Player='Jalen Nailor', _score=nan
+2025-11-07 22:32:19,521 - INFO - MATCHED: ResultsPlayer='Dawson Knox', Player='Dawson Knox', _score=nan
+2025-11-07 22:32:19,521 - INFO - MATCHED: ResultsPlayer='Rashid Shaheed', Player='Rashid Shaheed', _score=nan
+2025-11-07 22:32:19,522 - INFO - MATCHED: ResultsPlayer='Tony Pollard', Player='Tony Pollard', _score=nan
+2025-11-07 22:32:19,522 - INFO - MATCHED: ResultsPlayer='Noah Gray', Player='Noah Gray', _score=nan
+2025-11-07 22:32:19,522 - INFO - MATCHED: ResultsPlayer='Gunnar Helm', Player='Gunnar Helm', _score=nan
+2025-11-07 22:32:19,522 - INFO - MATCHED: ResultsPlayer='Aaron Jones Sr.', Player='Aaron Jones Sr.', _score=nan
+2025-11-07 22:32:19,522 - INFO - MATCHED: ResultsPlayer='Van Jefferson', Player='Van Jefferson', _score=nan
+2025-11-07 22:32:19,522 - INFO - MATCHED: ResultsPlayer='Cam Ward', Player='Cam Ward', _score=nan
+2025-11-07 22:32:19,522 - INFO - MATCHED: ResultsPlayer='Tyquan Thornton', Player='Tyquan Thornton', _score=nan
+2025-11-07 22:32:19,523 - INFO - MATCHED: ResultsPlayer='DeMario Douglas', Player='DeMario Douglas', _score=nan
+2025-11-07 22:32:19,523 - INFO - MATCHED: ResultsPlayer='Jaylin Noel', Player='Jaylin Noel', _score=nan
+2025-11-07 22:32:19,523 - INFO - MATCHED: ResultsPlayer='Tre' Harris', Player='Tre' Harris', _score=nan
+2025-11-07 22:32:19,523 - INFO - MATCHED: ResultsPlayer='Chig Okonkwo', Player='Chig Okonkwo', _score=nan
+2025-11-07 22:32:19,523 - INFO - MATCHED: ResultsPlayer='Jake Tonges', Player='Jake Tonges', _score=nan
+2025-11-07 22:32:19,523 - INFO - MATCHED: ResultsPlayer='Jayden Higgins', Player='Jayden Higgins', _score=nan
+2025-11-07 22:32:19,523 - INFO - MATCHED: ResultsPlayer='Emanuel Wilson', Player='Emanuel Wilson', _score=nan
+2025-11-07 22:32:19,524 - INFO - MATCHED: ResultsPlayer='Kenneth Gainwell', Player='Kenneth Gainwell', _score=nan
+2025-11-07 22:32:19,524 - INFO - MATCHED: ResultsPlayer='Samaje Perine', Player='Samaje Perine', _score=nan
+2025-11-07 22:32:19,524 - INFO - MATCHED: ResultsPlayer='Tyler Lockett', Player='Tyler Lockett', _score=nan
+2025-11-07 22:32:19,524 - INFO - MATCHED: ResultsPlayer='Chuba Hubbard', Player='Chuba Hubbard', _score=nan
+2025-11-07 22:32:19,524 - INFO - MATCHED: ResultsPlayer='Andrei Iosivas', Player='Andrei Iosivas', _score=nan
+2025-11-07 22:32:19,524 - INFO - MATCHED: ResultsPlayer='Elijah Moore', Player='Elijah Moore', _score=nan
+2025-11-07 22:32:19,524 - INFO - MATCHED: ResultsPlayer='Terrell Jennings', Player='Terrell Jennings', _score=nan
+2025-11-07 22:32:19,525 - INFO - MATCHED: ResultsPlayer='Nick Chubb', Player='Nick Chubb', _score=nan
+2025-11-07 22:32:19,525 - INFO - MATCHED: ResultsPlayer='Austin Hooper', Player='Austin Hooper', _score=nan
+2025-11-07 22:32:19,525 - INFO - MATCHED: ResultsPlayer='Alvin Kamara', Player='Alvin Kamara', _score=nan
+2025-11-07 22:32:19,525 - INFO - MATCHED: ResultsPlayer='Demarcus Robinson', Player='Demarcus Robinson', _score=nan
+2025-11-07 22:32:19,525 - INFO - MATCHED: ResultsPlayer='Jordan Mason', Player='Jordan Mason', _score=nan
+2025-11-07 22:32:19,525 - INFO - MATCHED: ResultsPlayer='Bryce Young', Player='Bryce Young', _score=nan
+2025-11-07 22:32:19,526 - INFO - MATCHED: ResultsPlayer='Darnell Washington', Player='Darnell Washington', _score=nan
+2025-11-07 22:32:19,526 - INFO - MATCHED: ResultsPlayer='Jordan Whittington', Player='Jordan Whittington', _score=nan
+2025-11-07 22:32:19,526 - INFO - MATCHED: ResultsPlayer='Devin Singletary', Player='Devin Singletary', _score=nan
+2025-11-07 22:32:19,526 - INFO - MATCHED: ResultsPlayer='Tommy Tremble', Player='Tommy Tremble', _score=nan
+2025-11-07 22:32:19,526 - INFO - MATCHED: ResultsPlayer='Bhayshul Tuten', Player='Bhayshul Tuten', _score=nan
+2025-11-07 22:32:19,526 - INFO - MATCHED: ResultsPlayer='Blake Corum', Player='Blake Corum', _score=nan
+2025-11-07 22:32:19,526 - INFO - MATCHED: ResultsPlayer='Adonai Mitchell', Player='Adonai Mitchell', _score=nan
+2025-11-07 22:32:19,527 - INFO - MATCHED: ResultsPlayer='Curtis Samuel', Player='Curtis Samuel', _score=nan
+2025-11-07 22:32:19,527 - INFO - MATCHED: ResultsPlayer='Terrance Ferguson', Player='Terrance Ferguson', _score=nan
+2025-11-07 22:32:19,527 - INFO - MATCHED: ResultsPlayer='Michael Mayer', Player='Michael Mayer', _score=nan
+2025-11-07 22:32:19,527 - INFO - MATCHED: ResultsPlayer='Brandin Cooks', Player='Brandin Cooks', _score=nan
+2025-11-07 22:32:19,527 - INFO - MATCHED: ResultsPlayer='Lil'Jordan Humphrey', Player='Lil'Jordan Humphrey', _score=nan
+2025-11-07 22:32:19,527 - INFO - MATCHED: ResultsPlayer='Isaac TeSlaa', Player='Isaac TeSlaa', _score=nan
+2025-11-07 22:32:19,527 - INFO - MATCHED: ResultsPlayer='Tyler Allgeier', Player='Tyler Allgeier', _score=nan
+2025-11-07 22:32:19,528 - INFO - MATCHED: ResultsPlayer='Mitchell Evans', Player='Mitchell Evans', _score=nan
+2025-11-07 22:32:19,528 - INFO - MATCHED: ResultsPlayer='Dont'e Thornton Jr.', Player='Dont'e Thornton Jr.', _score=nan
+2025-11-07 22:32:19,528 - INFO - MATCHED: ResultsPlayer='Devin Neal', Player='Devin Neal', _score=nan
+2025-11-07 22:32:19,528 - INFO - MATCHED: ResultsPlayer='Kalif Raymond', Player='Kalif Raymond', _score=nan
+2025-11-07 22:32:19,528 - INFO - MATCHED: ResultsPlayer='Brock Wright', Player='Brock Wright', _score=nan
+2025-11-07 22:32:19,528 - INFO - MATCHED: ResultsPlayer='Jaret Patterson', Player='Jaret Patterson', _score=nan
+2025-11-07 22:32:19,528 - INFO - MATCHED: ResultsPlayer='Jack Bech', Player='Jack Bech', _score=nan
+2025-11-07 22:32:19,529 - INFO - MATCHED: ResultsPlayer='Malik Heath', Player='Malik Heath', _score=nan
+2025-11-07 22:32:19,529 - INFO - MATCHED: ResultsPlayer='Brian Robinson Jr.', Player='Brian Robinson Jr.', _score=nan
+2025-11-07 22:32:19,529 - INFO - MATCHED: ResultsPlayer='Adam Thielen', Player='Adam Thielen', _score=nan
+2025-11-07 22:32:19,529 - INFO - MATCHED: ResultsPlayer='Savion Williams', Player='Savion Williams', _score=nan
+2025-11-07 22:32:19,529 - INFO - MATCHED: ResultsPlayer='Ty Johnson', Player='Ty Johnson', _score=nan
+2025-11-07 22:32:19,529 - INFO - MATCHED: ResultsPlayer='Tanner Hudson', Player='Tanner Hudson', _score=nan
+2025-11-07 22:32:19,529 - INFO - MATCHED: ResultsPlayer='Tyrell Shavers', Player='Tyrell Shavers', _score=nan
+2025-11-07 22:32:19,530 - INFO - MATCHED: ResultsPlayer='Kyle Juszczyk', Player='Kyle Juszczyk', _score=nan
+2025-11-07 22:32:19,530 - INFO - MATCHED: ResultsPlayer='Braxton Berrios', Player='Braxton Berrios', _score=nan
+2025-11-07 22:32:19,530 - INFO - MATCHED: ResultsPlayer='Devaughn Vele', Player='Devaughn Vele', _score=nan
+2025-11-07 22:32:19,530 - INFO - MATCHED: ResultsPlayer='Ray Davis', Player='Ray Davis', _score=nan
+2025-11-07 22:32:19,530 - INFO - MATCHED: ResultsPlayer='Spencer Rattler', Player='Spencer Rattler', _score=nan
+2025-11-07 22:32:19,530 - INFO - MATCHED: ResultsPlayer='Johnny Mundt', Player='Johnny Mundt', _score=nan
+2025-11-07 22:32:19,531 - INFO - MATCHED: ResultsPlayer='Chris Brooks', Player='Chris Brooks', _score=nan
+2025-11-07 22:32:19,531 - INFO - MATCHED: ResultsPlayer='Jackson Hawes', Player='Jackson Hawes', _score=nan
+2025-11-07 22:32:19,531 - INFO - MATCHED: ResultsPlayer='Trevor Etienne', Player='Trevor Etienne', _score=nan
+2025-11-07 22:32:19,531 - INFO - MATCHED: ResultsPlayer='Jake Browning', Player='Jake Browning', _score=nan
+2025-11-07 22:32:19,531 - INFO - MATCHED: ResultsPlayer='Davis Allen', Player='Davis Allen', _score=nan
+2025-11-07 22:32:19,531 - INFO - MATCHED: ResultsPlayer='Kaleb Johnson', Player='Kaleb Johnson', _score=nan
+2025-11-07 22:32:19,531 - INFO - MATCHED: ResultsPlayer='Kirk Cousins', Player='Kirk Cousins', _score=nan
+2025-11-07 22:32:19,532 - INFO - MATCHED: ResultsPlayer='Ameer Abdullah', Player='Ameer Abdullah', _score=nan
+2025-11-07 22:32:19,532 - INFO - MATCHED: ResultsPlayer='Zavier Scott', Player='Zavier Scott', _score=nan
+2025-11-07 22:32:19,532 - INFO - MATCHED: ResultsPlayer='Colby Parkinson', Player='Colby Parkinson', _score=nan
+2025-11-07 22:32:19,532 - INFO - MATCHED: ResultsPlayer='Luke Musgrave', Player='Luke Musgrave', _score=nan
+2025-11-07 22:32:19,533 - INFO - MATCHED: ResultsPlayer='Adam Trautman', Player='Adam Trautman', _score=nan
+2025-11-07 22:32:19,533 - INFO - MATCHED: ResultsPlayer='Mo Alie-Cox', Player='Mo Alie-Cox', _score=nan
+2025-11-07 22:32:19,533 - INFO - MATCHED: ResultsPlayer='Jordan Watkins', Player='Jordan Watkins', _score=nan
+2025-11-07 22:32:19,533 - INFO - MATCHED: ResultsPlayer='Raheem Mostert', Player='Raheem Mostert', _score=nan
+2025-11-07 22:32:19,533 - INFO - MATCHED: ResultsPlayer='Jimmy Horn Jr.', Player='Jimmy Horn Jr.', _score=nan
+2025-11-07 22:32:19,534 - INFO - MATCHED: ResultsPlayer='Devin Duvernay', Player='Devin Duvernay', _score=nan
+2025-11-07 22:32:19,534 - INFO - MATCHED: ResultsPlayer='Ashton Dulin', Player='Ashton Dulin', _score=nan
+2025-11-07 22:32:19,534 - INFO - MATCHED: ResultsPlayer='Harrison Bryant', Player='Harrison Bryant', _score=nan
+2025-11-07 22:32:19,534 - INFO - MATCHED: ResultsPlayer='LeQuint Allen Jr.', Player='LeQuint Allen Jr.', _score=nan
+2025-11-07 22:32:19,534 - INFO - MATCHED: ResultsPlayer='Kyle Williams', Player='Kyle Williams', _score=nan
+2025-11-07 22:32:19,534 - INFO - MATCHED: ResultsPlayer='John FitzPatrick', Player='John FitzPatrick', _score=nan
+2025-11-07 22:32:19,534 - INFO - MATCHED: ResultsPlayer='David Sills V', Player='David Sills V', _score=nan
+2025-11-07 22:32:19,535 - INFO - MATCHED: ResultsPlayer='Drew Sample', Player='Drew Sample', _score=nan
+2025-11-07 22:32:19,535 - INFO - MATCHED: ResultsPlayer='Beaux Collins', Player='Beaux Collins', _score=nan
+2025-11-07 22:32:19,535 - INFO - MATCHED: ResultsPlayer='Konata Mumpfield', Player='Konata Mumpfield', _score=nan
+2025-11-07 22:32:19,535 - INFO - MATCHED: ResultsPlayer='Ben Skowronek', Player='Ben Skowronek', _score=nan
+2025-11-07 22:32:19,535 - INFO - MATCHED: ResultsPlayer='Luke Farrell', Player='Luke Farrell', _score=nan
+2025-11-07 22:32:19,535 - INFO - MATCHED: ResultsPlayer='Skyy Moore', Player='Skyy Moore', _score=nan
+2025-11-07 22:32:19,535 - INFO - MATCHED: ResultsPlayer='KhaDarel Hodge', Player='KhaDarel Hodge', _score=nan
+2025-11-07 22:32:19,536 - INFO - MATCHED: ResultsPlayer='Chris Manhertz', Player='Chris Manhertz', _score=nan
+2025-11-07 22:32:19,536 - INFO - MATCHED: ResultsPlayer='Connor Heyward', Player='Connor Heyward', _score=nan
+2025-11-07 22:32:19,536 - INFO - MATCHED: ResultsPlayer='Xavier Smith', Player='Xavier Smith', _score=nan
+2025-11-07 22:32:19,536 - INFO - MATCHED: ResultsPlayer='Foster Moreau', Player='Foster Moreau', _score=nan
+2025-11-07 22:32:19,536 - INFO - MATCHED: ResultsPlayer='Tyler Badie', Player='Tyler Badie', _score=nan
+2025-11-07 22:32:19,536 - INFO - MATCHED: ResultsPlayer='Brycen Tremayne', Player='Brycen Tremayne', _score=nan
+2025-11-07 22:32:19,537 - INFO - MATCHED: ResultsPlayer='Riley Leonard', Player='Riley Leonard', _score=nan
+2025-11-07 22:32:19,537 - INFO - MATCHED: ResultsPlayer='Mason Rudolph', Player='Mason Rudolph', _score=nan
+2025-11-07 22:32:19,537 - INFO - MATCHED: ResultsPlayer='Julius Chestnut', Player='Julius Chestnut', _score=nan
+2025-11-07 22:32:19,537 - INFO - MATCHED: ResultsPlayer='Tahj Brooks', Player='Tahj Brooks', _score=nan
+2025-11-07 22:32:19,537 - INFO - MATCHED: ResultsPlayer='D'Andre Swift', Player='nan', _score=nan
+2025-11-07 22:32:19,538 - INFO - MATCHED: ResultsPlayer='Marquez Valdes-Scantling', Player='nan', _score=nan
+2025-11-07 22:32:19,538 - INFO - MATCHED: ResultsPlayer='Ray-Ray McCloud III', Player='nan', _score=nan
+2025-11-07 22:32:19,538 - INFO - MATCHED: ResultsPlayer='Travis Homer', Player='nan', _score=nan
+2025-11-07 22:32:19,538 - INFO - MATCHED: ResultsPlayer='Travis Hunter', Player='nan', _score=nan
+2025-11-07 22:32:19,538 - INFO - MATCHED: ResultsPlayer='Albert Okwuegbunam Jr.', Player='nan', _score=nan
+2025-11-07 22:32:19,539 - INFO - MATCHED: ResultsPlayer='Jalin Hyatt', Player='nan', _score=nan
+2025-11-07 22:32:19,539 - INFO - MATCHED: ResultsPlayer='Gabe Davis', Player='nan', _score=nan
+2025-11-07 22:32:19,539 - INFO - MATCHED: ResultsPlayer='Brock Purdy', Player='nan', _score=nan
+2025-11-07 22:32:19,539 - INFO - MATCHED: ResultsPlayer='Clyde Edwards-Helaire', Player='nan', _score=nan
+2025-11-07 22:32:19,539 - INFO - MATCHED: ResultsPlayer='Hunter Renfrow', Player='nan', _score=nan
+2025-11-07 22:32:19,539 - INFO - MATCHED: ResultsPlayer='Rhamondre Stevenson', Player='nan', _score=nan
+2025-11-07 22:32:19,540 - INFO - MATCHED: ResultsPlayer='Brittain Brown', Player='nan', _score=nan
+2025-11-07 22:32:19,540 - INFO - MATCHED: ResultsPlayer='Isiah Pacheco', Player='nan', _score=nan
+2025-11-07 22:32:19,540 - INFO - MATCHED: ResultsPlayer='D'Ernest Johnson', Player='nan', _score=nan
+2025-11-07 22:32:19,540 - INFO - MATCHED: ResultsPlayer='Marcedes Lewis', Player='nan', _score=nan
+2025-11-07 22:32:19,540 - INFO - MATCHED: ResultsPlayer='Thomas Fidone II', Player='nan', _score=nan
+2025-11-07 22:32:19,540 - INFO - MATCHED: ResultsPlayer='Ben Sims', Player='nan', _score=nan
+2025-11-07 22:32:19,541 - INFO - MATCHED: ResultsPlayer='Ricky Pearsall', Player='nan', _score=nan
+2025-11-07 22:32:19,541 - INFO - MATCHED: ResultsPlayer='Jahdae Walker', Player='nan', _score=nan
+2025-11-07 22:32:19,541 - INFO - MATCHED: ResultsPlayer='Nikko Remigio', Player='nan', _score=nan
+2025-11-07 22:32:19,541 - INFO - MATCHED: ResultsPlayer='Austin Trammell', Player='nan', _score=nan
+2025-11-07 22:32:19,541 - INFO - MATCHED: ResultsPlayer='Jayden Reed', Player='nan', _score=nan
+2025-11-07 22:32:19,541 - INFO - MATCHED: ResultsPlayer='Will Dissly', Player='nan', _score=nan
+2025-11-07 22:32:19,542 - INFO - MATCHED: ResultsPlayer='Trayveon Williams', Player='nan', _score=nan
+2025-11-07 22:32:19,542 - INFO - MATCHED: ResultsPlayer='KeAndre Lambert-Smith', Player='nan', _score=nan
+2025-11-07 22:32:19,542 - INFO - MATCHED: ResultsPlayer='Kristian Wilkerson', Player='nan', _score=nan
+2025-11-07 22:32:19,542 - INFO - MATCHED: ResultsPlayer='Tyler Conklin', Player='nan', _score=nan
+2025-11-07 22:32:19,542 - INFO - MATCHED: ResultsPlayer='Ian Thomas', Player='nan', _score=nan
+2025-11-07 22:32:19,542 - INFO - MATCHED: ResultsPlayer='Ben Yurosek', Player='nan', _score=nan
+2025-11-07 22:32:19,543 - INFO - MATCHED: ResultsPlayer='Ja'seem Reed', Player='nan', _score=nan
+2025-11-07 22:32:19,543 - INFO - MATCHED: ResultsPlayer='Cam Akers', Player='nan', _score=nan
+2025-11-07 22:32:19,543 - INFO - MATCHED: ResultsPlayer='Elijah Mitchell', Player='nan', _score=nan
+2025-11-07 22:32:19,543 - INFO - MATCHED: ResultsPlayer='Jimmy Holiday', Player='nan', _score=nan
+2025-11-07 22:32:19,543 - INFO - MATCHED: ResultsPlayer='Brandon Aiyuk', Player='nan', _score=nan
+2025-11-07 22:32:19,543 - INFO - MATCHED: ResultsPlayer='Brennan Presley', Player='nan', _score=nan
+2025-11-07 22:32:19,543 - INFO - MATCHED: ResultsPlayer='Hassan Haskins', Player='nan', _score=nan
+2025-11-07 22:32:19,544 - INFO - MATCHED: ResultsPlayer='Robert Tonyan', Player='nan', _score=nan
+2025-11-07 22:32:19,544 - INFO - MATCHED: ResultsPlayer='Luther Burden III', Player='nan', _score=nan
+2025-11-07 22:32:19,544 - INFO - MATCHED: ResultsPlayer='Ronnie Rivers', Player='nan', _score=nan
+2025-11-07 22:32:19,544 - INFO - MATCHED: ResultsPlayer='Durham Smythe', Player='nan', _score=nan
+2025-11-07 22:32:19,544 - INFO - MATCHED: ResultsPlayer='Tre Watson', Player='nan', _score=nan
+2025-11-07 22:32:19,544 - INFO - MATCHED: ResultsPlayer='Miles Boykin', Player='nan', _score=nan
+2025-11-07 22:32:19,544 - INFO - MATCHED: ResultsPlayer='Jordan Akins', Player='nan', _score=nan
+2025-11-07 22:32:19,545 - INFO - MATCHED: ResultsPlayer='Carson Steele', Player='nan', _score=nan
+2025-11-07 22:32:19,545 - INFO - MATCHED: ResultsPlayer='Josh Whyle', Player='nan', _score=nan
+2025-11-07 22:32:19,545 - INFO - MATCHED: ResultsPlayer='Zamir White', Player='nan', _score=nan
+2025-11-07 22:32:19,545 - INFO - MATCHED: ResultsPlayer='Mitch Tinsley', Player='nan', _score=nan
+2025-11-07 22:32:19,545 - INFO - MATCHED: ResultsPlayer='Daniel Bellinger', Player='nan', _score=nan
+2025-11-07 22:32:19,545 - INFO - MATCHED: ResultsPlayer='D.J. Montgomery', Player='nan', _score=nan
+2025-11-07 22:32:19,545 - INFO - MATCHED: ResultsPlayer='Keaontay Ingram', Player='nan', _score=nan
+2025-11-07 22:32:19,546 - INFO - MATCHED: ResultsPlayer='Brenton Strange', Player='nan', _score=nan
+2025-11-07 22:32:19,546 - INFO - MATCHED: ResultsPlayer='Casey Washington', Player='nan', _score=nan
+2025-11-07 22:32:19,546 - INFO - MATCHED: ResultsPlayer='Calvin Ridley', Player='nan', _score=nan
+2025-11-07 22:32:19,546 - INFO - MATCHED: ResultsPlayer='Ulysses Bentley IV', Player='nan', _score=nan
+2025-11-07 22:32:19,547 - INFO - MATCHED: ResultsPlayer='Jason Brownlee', Player='nan', _score=nan
+2025-11-07 22:32:19,547 - INFO - MATCHED: ResultsPlayer='Anthony Tyus III', Player='nan', _score=nan
+2025-11-07 22:32:19,547 - INFO - MATCHED: ResultsPlayer='Audric Estime', Player='nan', _score=nan
+2025-11-07 22:32:19,547 - INFO - MATCHED: ResultsPlayer='Laquon Treadwell', Player='nan', _score=nan
+2025-11-07 22:32:19,547 - INFO - MATCHED: ResultsPlayer='Efton Chism III', Player='nan', _score=nan
+2025-11-07 22:32:19,547 - INFO - MATCHED: ResultsPlayer='Malik Turner', Player='nan', _score=nan
+2025-11-07 22:32:19,548 - INFO - MATCHED: ResultsPlayer='Scott Matlock', Player='nan', _score=nan
+2025-11-07 22:32:19,548 - INFO - MATCHED: ResultsPlayer='Marvin Mims Jr.', Player='nan', _score=nan
+2025-11-07 22:32:19,548 - INFO - MATCHED: ResultsPlayer='Nick Vannett', Player='nan', _score=nan
+2025-11-07 22:32:19,548 - INFO - MATCHED: ResultsPlayer='Emory Jones', Player='nan', _score=nan
+2025-11-07 22:32:19,548 - INFO - MATCHED: ResultsPlayer='Frank Gore Jr.', Player='nan', _score=nan
+2025-11-07 22:32:19,548 - INFO - MATCHED: ResultsPlayer='Dontayvion Wicks', Player='nan', _score=nan
+2025-11-07 22:32:19,549 - INFO - MATCHED: ResultsPlayer='Moliki Matavao', Player='nan', _score=nan
+2025-11-07 22:32:19,549 - INFO - MATCHED: ResultsPlayer='DJ Uiagalelei', Player='nan', _score=nan
+2025-11-07 22:32:19,549 - INFO - MATCHED: ResultsPlayer='Jared Wayne', Player='nan', _score=nan
+2025-11-07 22:32:19,550 - INFO - MATCHED: ResultsPlayer='John Jiles', Player='nan', _score=nan
+2025-11-07 22:32:19,550 - INFO - MATCHED: ResultsPlayer='Trent Taylor', Player='nan', _score=nan
+2025-11-07 22:32:19,550 - INFO - MATCHED: ResultsPlayer='Coleman Owen', Player='nan', _score=nan
+2025-11-07 22:32:19,550 - INFO - MATCHED: ResultsPlayer='Jacob Saylors', Player='nan', _score=nan
+2025-11-07 22:32:19,550 - INFO - MATCHED: ResultsPlayer='Stetson Bennett IV', Player='nan', _score=nan
+2025-11-07 22:32:19,551 - INFO - MATCHED: ResultsPlayer='Max Hurleman', Player='nan', _score=nan
+2025-11-07 22:32:19,551 - INFO - MATCHED: ResultsPlayer='Dontae Fleming', Player='nan', _score=nan
+2025-11-07 22:32:19,551 - INFO - MATCHED: ResultsPlayer='Cody Schrader', Player='nan', _score=nan
+2025-11-07 22:32:19,551 - INFO - MATCHED: ResultsPlayer='A.T. Perry', Player='nan', _score=nan
+2025-11-07 22:32:19,551 - INFO - MATCHED: ResultsPlayer='Joshua Simon', Player='nan', _score=nan
+2025-11-07 22:32:19,551 - INFO - MATCHED: ResultsPlayer='Stephen Gosnell', Player='nan', _score=nan
+2025-11-07 22:32:19,552 - INFO - MATCHED: ResultsPlayer='Reggie Gilliam', Player='nan', _score=nan
+2025-11-07 22:32:19,552 - INFO - MATCHED: ResultsPlayer='Deven Thompkins', Player='nan', _score=nan
+2025-11-07 22:32:19,552 - INFO - MATCHED: ResultsPlayer='Dante Miller', Player='nan', _score=nan
+2025-11-07 22:32:19,552 - INFO - MATCHED: ResultsPlayer='Isaac Guerendo', Player='nan', _score=nan
+2025-11-07 22:32:19,552 - INFO - MATCHED: ResultsPlayer='Clayton Tune', Player='nan', _score=nan
+2025-11-07 22:32:19,552 - INFO - MATCHED: ResultsPlayer='Ross Dwelley', Player='nan', _score=nan
+2025-11-07 22:32:19,553 - INFO - MATCHED: ResultsPlayer='Patrick Herbert', Player='nan', _score=nan
+2025-11-07 22:32:19,553 - INFO - MATCHED: ResultsPlayer='Thomas Odukoya', Player='nan', _score=nan
+2025-11-07 22:32:19,553 - INFO - MATCHED: ResultsPlayer='MarShawn Lloyd', Player='nan', _score=nan
+2025-11-07 22:32:19,553 - INFO - MATCHED: ResultsPlayer='Myles Price', Player='nan', _score=nan
+2025-11-07 22:32:19,553 - INFO - MATCHED: ResultsPlayer='Nikola Kalinic', Player='nan', _score=nan
+2025-11-07 22:32:19,553 - INFO - MATCHED: ResultsPlayer='Zach Horton', Player='nan', _score=nan
+2025-11-07 22:32:19,554 - INFO - MATCHED: ResultsPlayer='Quintez Cephus', Player='nan', _score=nan
+2025-11-07 22:32:19,554 - INFO - MATCHED: ResultsPlayer='Ke'Shawn Williams', Player='nan', _score=nan
+2025-11-07 22:32:19,554 - INFO - MATCHED: ResultsPlayer='Cam Skattebo', Player='nan', _score=nan
+2025-11-07 22:32:19,554 - INFO - MATCHED: ResultsPlayer='Bryce Pierre', Player='nan', _score=nan
+2025-11-07 22:32:19,554 - INFO - Merge Summary: Total=345, Matched=345, Unmatched=0
+2025-11-07 22:32:19,554 - INFO - df_final columns: ['ResultsPlayer', 'ActualDrafted', 'ActualFPTS', 'Unnamed: 0', 'Team', 'Pos', 'ProjectedFPTS', 'FPTS', 'BiasApplied', 'AdjustmentPercent', 'Lambda', 'Sample_count', 'k', 'fantasyPointsRank', 'FPTS_Rank', 'Salary', 'Depth', 'Player', '_score']
+2025-11-07 22:32:20,099 - INFO - Team changed at row 18: 'ARZ' \u2192 'ARI'
+2025-11-07 22:32:20,100 - INFO - Team changed at row 19: 'ARZ' \u2192 'ARI'
+2025-11-07 22:32:20,100 - INFO - Team changed at row 20: 'ARZ' \u2192 'ARI'
+2025-11-07 22:32:20,100 - INFO - Team changed at row 118: 'BLT' \u2192 'BAL'
+2025-11-07 22:32:20,100 - INFO - Team changed at row 119: 'BLT' \u2192 'BAL'
+2025-11-07 22:32:20,100 - INFO - Team changed at row 149: 'LA' \u2192 'LAR'
+2025-11-07 22:32:20,100 - INFO - Team changed at row 150: 'LA' \u2192 'LAR'
+2025-11-07 22:32:20,100 - INFO - Team changed at row 151: 'LA' \u2192 'LAR'
+2025-11-07 22:32:20,100 - INFO - Team changed at row 152: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,100 - INFO - Team changed at row 173: 'HST' \u2192 'HOU'
+2025-11-07 22:32:20,100 - INFO - Team changed at row 180: 'HST' \u2192 'HOU'
+2025-11-07 22:32:20,101 - INFO - Team changed at row 227: 'HST' \u2192 'HOU'
+2025-11-07 22:32:20,101 - INFO - Team changed at row 228: 'HST' \u2192 'HOU'
+2025-11-07 22:32:20,101 - INFO - Team changed at row 229: 'HST' \u2192 'HOU'
+2025-11-07 22:32:20,101 - INFO - Team changed at row 230: 'HST' \u2192 'HOU'
+2025-11-07 22:32:20,101 - INFO - Team changed at row 252: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,101 - INFO - Team changed at row 253: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,101 - INFO - Team changed at row 254: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,101 - INFO - Team changed at row 256: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,101 - INFO - Team changed at row 301: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,101 - INFO - Team changed at row 302: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,101 - INFO - Team changed at row 308: 'BLT' \u2192 'BAL'
+2025-11-07 22:32:20,101 - INFO - Team changed at row 309: 'BLT' \u2192 'BAL'
+2025-11-07 22:32:20,102 - INFO - Team changed at row 310: 'BLT' \u2192 'BAL'
+2025-11-07 22:32:20,102 - INFO - Team changed at row 311: 'BLT' \u2192 'BAL'
+2025-11-07 22:32:20,102 - INFO - Team changed at row 353: 'HST' \u2192 'HOU'
+2025-11-07 22:32:20,102 - INFO - Team changed at row 354: 'HST' \u2192 'HOU'
+2025-11-07 22:32:20,102 - INFO - Team changed at row 369: 'LA' \u2192 'LAR'
+2025-11-07 22:32:20,102 - INFO - Team changed at row 370: 'LA' \u2192 'LAR'
+2025-11-07 22:32:20,102 - INFO - Team changed at row 371: 'LA' \u2192 'LAR'
+2025-11-07 22:32:20,102 - INFO - Team changed at row 387: 'BLT' \u2192 'BAL'
+2025-11-07 22:32:20,102 - INFO - Team changed at row 388: 'BLT' \u2192 'BAL'
+2025-11-07 22:32:20,102 - INFO - Team changed at row 389: 'BLT' \u2192 'BAL'
+2025-11-07 22:32:20,102 - INFO - Team changed at row 449: 'HST' \u2192 'HOU'
+2025-11-07 22:32:20,102 - INFO - Team changed at row 450: 'HST' \u2192 'HOU'
+2025-11-07 22:32:20,103 - INFO - Team changed at row 451: 'HST' \u2192 'HOU'
+2025-11-07 22:32:20,103 - INFO - Team changed at row 452: 'HST' \u2192 'HOU'
+2025-11-07 22:32:20,103 - INFO - Team changed at row 454: 'HST' \u2192 'HOU'
+2025-11-07 22:32:20,103 - INFO - Team changed at row 469: 'HST' \u2192 'HOU'
+2025-11-07 22:32:20,103 - INFO - Team changed at row 470: 'HST' \u2192 'HOU'
+2025-11-07 22:32:20,103 - INFO - Team changed at row 489: 'LA' \u2192 'LAR'
+2025-11-07 22:32:20,103 - INFO - Team changed at row 490: 'LA' \u2192 'LAR'
+2025-11-07 22:32:20,103 - INFO - Team changed at row 491: 'LA' \u2192 'LAR'
+2025-11-07 22:32:20,103 - INFO - Team changed at row 500: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,103 - INFO - Team changed at row 501: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,103 - INFO - Team changed at row 502: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,103 - INFO - Team changed at row 505: 'LA' \u2192 'LAR'
+2025-11-07 22:32:20,104 - INFO - Team changed at row 506: 'LA' \u2192 'LAR'
+2025-11-07 22:32:20,104 - INFO - Team changed at row 507: 'LA' \u2192 'LAR'
+2025-11-07 22:32:20,104 - INFO - Team changed at row 518: 'BLT' \u2192 'BAL'
+2025-11-07 22:32:20,104 - INFO - Team changed at row 519: 'BLT' \u2192 'BAL'
+2025-11-07 22:32:20,104 - INFO - Team changed at row 520: 'BLT' \u2192 'BAL'
+2025-11-07 22:32:20,104 - INFO - Team changed at row 521: 'BLT' \u2192 'BAL'
+2025-11-07 22:32:20,104 - INFO - Team changed at row 545: 'BLT' \u2192 'BAL'
+2025-11-07 22:32:20,104 - INFO - Team changed at row 546: 'BLT' \u2192 'BAL'
+2025-11-07 22:32:20,104 - INFO - Team changed at row 547: 'BLT' \u2192 'BAL'
+2025-11-07 22:32:20,104 - INFO - Team changed at row 548: 'BLT' \u2192 'BAL'
+2025-11-07 22:32:20,104 - INFO - Team changed at row 565: 'BLT' \u2192 'BAL'
+2025-11-07 22:32:20,104 - INFO - Team changed at row 566: 'BLT' \u2192 'BAL'
+2025-11-07 22:32:20,105 - INFO - Team changed at row 567: 'BLT' \u2192 'BAL'
+2025-11-07 22:32:20,105 - INFO - Team changed at row 568: 'BLT' \u2192 'BAL'
+2025-11-07 22:32:20,105 - INFO - Team changed at row 569: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,105 - INFO - Team changed at row 570: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,105 - INFO - Team changed at row 571: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,105 - INFO - Team changed at row 572: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,105 - INFO - Team changed at row 573: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,105 - INFO - Team changed at row 610: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,105 - INFO - Team changed at row 611: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,106 - INFO - Team changed at row 612: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,106 - INFO - Team changed at row 613: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,106 - INFO - Team changed at row 614: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,106 - INFO - Team changed at row 629: 'ARZ' \u2192 'ARI'
+2025-11-07 22:32:20,106 - INFO - Team changed at row 630: 'ARZ' \u2192 'ARI'
+2025-11-07 22:32:20,106 - INFO - Team changed at row 631: 'ARZ' \u2192 'ARI'
+2025-11-07 22:32:20,106 - INFO - Team changed at row 632: 'ARZ' \u2192 'ARI'
+2025-11-07 22:32:20,106 - INFO - Team changed at row 641: 'ARZ' \u2192 'ARI'
+2025-11-07 22:32:20,106 - INFO - Team changed at row 642: 'ARZ' \u2192 'ARI'
+2025-11-07 22:32:20,106 - INFO - Team changed at row 662: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,107 - INFO - Team changed at row 663: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,107 - INFO - Team changed at row 690: 'ARZ' \u2192 'ARI'
+2025-11-07 22:32:20,107 - INFO - Team changed at row 691: 'ARZ' \u2192 'ARI'
+2025-11-07 22:32:20,107 - INFO - Team changed at row 692: 'ARZ' \u2192 'ARI'
+2025-11-07 22:32:20,107 - INFO - Team changed at row 693: 'ARZ' \u2192 'ARI'
+2025-11-07 22:32:20,107 - INFO - Team changed at row 703: 'HST' \u2192 'HOU'
+2025-11-07 22:32:20,107 - INFO - Team changed at row 704: 'HST' \u2192 'HOU'
+2025-11-07 22:32:20,107 - INFO - Team changed at row 705: 'HST' \u2192 'HOU'
+2025-11-07 22:32:20,107 - INFO - Team changed at row 706: 'HST' \u2192 'HOU'
+2025-11-07 22:32:20,107 - INFO - Team changed at row 709: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,107 - INFO - Team changed at row 710: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,107 - INFO - Team changed at row 711: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,108 - INFO - Team changed at row 712: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,108 - INFO - Team changed at row 713: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,108 - INFO - Team changed at row 714: 'HST' \u2192 'HOU'
+2025-11-07 22:32:20,108 - INFO - Team changed at row 759: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,108 - INFO - Team changed at row 760: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,108 - INFO - Team changed at row 761: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,108 - INFO - Team changed at row 762: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,108 - INFO - Team changed at row 763: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,108 - INFO - Team changed at row 769: 'BLT' \u2192 'BAL'
+2025-11-07 22:32:20,108 - INFO - Team changed at row 770: 'BLT' \u2192 'BAL'
+2025-11-07 22:32:20,108 - INFO - Team changed at row 807: 'ARZ' \u2192 'ARI'
+2025-11-07 22:32:20,108 - INFO - Team changed at row 808: 'ARZ' \u2192 'ARI'
+2025-11-07 22:32:20,109 - INFO - Team changed at row 809: 'ARZ' \u2192 'ARI'
+2025-11-07 22:32:20,109 - INFO - Team changed at row 869: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,109 - INFO - Team changed at row 870: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,109 - INFO - Team changed at row 871: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,109 - INFO - Team changed at row 872: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,109 - INFO - Team changed at row 873: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,109 - INFO - Team changed at row 876: 'ARZ' \u2192 'ARI'
+2025-11-07 22:32:20,109 - INFO - Team changed at row 916: 'HST' \u2192 'HOU'
+2025-11-07 22:32:20,109 - INFO - Team changed at row 917: 'HST' \u2192 'HOU'
+2025-11-07 22:32:20,109 - INFO - Team changed at row 918: 'HST' \u2192 'HOU'
+2025-11-07 22:32:20,109 - INFO - Team changed at row 919: 'HST' \u2192 'HOU'
+2025-11-07 22:32:20,109 - INFO - Team changed at row 939: 'HST' \u2192 'HOU'
+2025-11-07 22:32:20,109 - INFO - Team changed at row 940: 'HST' \u2192 'HOU'
+2025-11-07 22:32:20,110 - INFO - Team changed at row 941: 'HST' \u2192 'HOU'
+2025-11-07 22:32:20,110 - INFO - Team changed at row 942: 'HST' \u2192 'HOU'
+2025-11-07 22:32:20,110 - INFO - Team changed at row 955: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,110 - INFO - Team changed at row 956: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,110 - INFO - Team changed at row 957: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,110 - INFO - Team changed at row 958: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,110 - INFO - Team changed at row 959: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,110 - INFO - Team changed at row 962: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,110 - INFO - Team changed at row 963: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,110 - INFO - Team changed at row 964: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,110 - INFO - Team changed at row 965: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,111 - INFO - Team changed at row 966: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,111 - INFO - Team changed at row 972: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,111 - INFO - Team changed at row 973: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,111 - INFO - Team changed at row 1010: 'LA' \u2192 'LAR'
+2025-11-07 22:32:20,111 - INFO - Team changed at row 1011: 'LA' \u2192 'LAR'
+2025-11-07 22:32:20,111 - INFO - Team changed at row 1012: 'LA' \u2192 'LAR'
+2025-11-07 22:32:20,111 - INFO - Team changed at row 1051: 'BLT' \u2192 'BAL'
+2025-11-07 22:32:20,111 - INFO - Team changed at row 1052: 'BLT' \u2192 'BAL'
+2025-11-07 22:32:20,111 - INFO - Team changed at row 1053: 'BLT' \u2192 'BAL'
+2025-11-07 22:32:20,111 - INFO - Team changed at row 1054: 'BLT' \u2192 'BAL'
+2025-11-07 22:32:20,111 - INFO - Team changed at row 1103: 'BLT' \u2192 'BAL'
+2025-11-07 22:32:20,111 - INFO - Team changed at row 1104: 'BLT' \u2192 'BAL'
+2025-11-07 22:32:20,112 - INFO - Team changed at row 1169: 'ARZ' \u2192 'ARI'
+2025-11-07 22:32:20,112 - INFO - Team changed at row 1170: 'ARZ' \u2192 'ARI'
+2025-11-07 22:32:20,112 - INFO - Team changed at row 1171: 'ARZ' \u2192 'ARI'
+2025-11-07 22:32:20,112 - INFO - Team changed at row 1174: 'LA' \u2192 'LAR'
+2025-11-07 22:32:20,112 - INFO - Team changed at row 1175: 'LA' \u2192 'LAR'
+2025-11-07 22:32:20,112 - INFO - Team changed at row 1176: 'LA' \u2192 'LAR'
+2025-11-07 22:32:20,112 - INFO - Team changed at row 1184: 'LA' \u2192 'LAR'
+2025-11-07 22:32:20,112 - INFO - Team changed at row 1185: 'LA' \u2192 'LAR'
+2025-11-07 22:32:20,112 - INFO - Team changed at row 1198: 'BLT' \u2192 'BAL'
+2025-11-07 22:32:20,113 - INFO - Team changed at row 1199: 'BLT' \u2192 'BAL'
+2025-11-07 22:32:20,113 - INFO - Team changed at row 1250: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,113 - INFO - Team changed at row 1251: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,113 - INFO - Team changed at row 1252: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,113 - INFO - Team changed at row 1270: 'BLT' \u2192 'BAL'
+2025-11-07 22:32:20,113 - INFO - Team changed at row 1271: 'BLT' \u2192 'BAL'
+2025-11-07 22:32:20,113 - INFO - Team changed at row 1272: 'BLT' \u2192 'BAL'
+2025-11-07 22:32:20,113 - INFO - Team changed at row 1273: 'BLT' \u2192 'BAL'
+2025-11-07 22:32:20,113 - INFO - Team changed at row 1279: 'ARZ' \u2192 'ARI'
+2025-11-07 22:32:20,113 - INFO - Team changed at row 1280: 'ARZ' \u2192 'ARI'
+2025-11-07 22:32:20,113 - INFO - Team changed at row 1281: 'ARZ' \u2192 'ARI'
+2025-11-07 22:32:20,113 - INFO - Team changed at row 1282: 'ARZ' \u2192 'ARI'
+2025-11-07 22:32:20,115 - INFO - Team changed at row 1301: 'LA' \u2192 'LAR'
+2025-11-07 22:32:20,115 - INFO - Team changed at row 1302: 'LA' \u2192 'LAR'
+2025-11-07 22:32:20,115 - INFO - Team changed at row 1303: 'LA' \u2192 'LAR'
+2025-11-07 22:32:20,115 - INFO - Team changed at row 1304: 'ARZ' \u2192 'ARI'
+2025-11-07 22:32:20,115 - INFO - Team changed at row 1305: 'ARZ' \u2192 'ARI'
+2025-11-07 22:32:20,115 - INFO - Team changed at row 1306: 'ARZ' \u2192 'ARI'
+2025-11-07 22:32:20,115 - INFO - Team changed at row 1326: 'ARZ' \u2192 'ARI'
+2025-11-07 22:32:20,116 - INFO - Team changed at row 1327: 'ARZ' \u2192 'ARI'
+2025-11-07 22:32:20,116 - INFO - Team changed at row 1328: 'ARZ' \u2192 'ARI'
+2025-11-07 22:32:20,116 - INFO - Team changed at row 1329: 'ARZ' \u2192 'ARI'
+2025-11-07 22:32:20,116 - INFO - Team changed at row 1387: 'HST' \u2192 'HOU'
+2025-11-07 22:32:20,116 - INFO - Team changed at row 1388: 'HST' \u2192 'HOU'
+2025-11-07 22:32:20,116 - INFO - Team changed at row 1389: 'HST' \u2192 'HOU'
+2025-11-07 22:32:20,116 - INFO - Team changed at row 1390: 'HST' \u2192 'HOU'
+2025-11-07 22:32:20,116 - INFO - Team changed at row 1398: 'HST' \u2192 'HOU'
+2025-11-07 22:32:20,116 - INFO - Team changed at row 1399: 'HST' \u2192 'HOU'
+2025-11-07 22:32:20,116 - INFO - Team changed at row 1400: 'HST' \u2192 'HOU'
+2025-11-07 22:32:20,117 - INFO - Team changed at row 1459: 'LA' \u2192 'LAR'
+2025-11-07 22:32:20,117 - INFO - Team changed at row 1460: 'LA' \u2192 'LAR'
+2025-11-07 22:32:20,117 - INFO - Team changed at row 1461: 'LA' \u2192 'LAR'
+2025-11-07 22:32:20,117 - INFO - Team changed at row 1468: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,117 - INFO - Team changed at row 1469: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,117 - INFO - Team changed at row 1470: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,117 - INFO - Team changed at row 1471: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,117 - INFO - Team changed at row 1472: 'CLV' \u2192 'CLE'
+2025-11-07 22:32:20,117 - INFO - Team changed at row 1489: 'BLT' \u2192 'BAL'
+2025-11-07 22:32:20,117 - INFO - Team changed at row 1499: 'BLT' \u2192 'BAL'
+2025-11-07 22:32:20,117 - INFO - Team changed at row 1500: 'BLT' \u2192 'BAL'
+2025-11-07 22:32:20,117 - INFO - Team changed at row 1501: 'BLT' \u2192 'BAL'
+2025-11-07 22:32:20,118 - INFO - Team changed at row 1502: 'BLT' \u2192 'BAL'
+2025-11-07 22:32:20,118 - INFO - Team changed at row 1693: 'ARZ' \u2192 'ARI'
+2025-11-07 22:32:20,118 - INFO - Team changed at row 1694: 'ARZ' \u2192 'ARI'
+2025-11-07 22:32:20,118 - INFO - Team changed at row 1765: 'ARZ' \u2192 'ARI'
+2025-11-07 22:32:20,118 - INFO - Team changed at row 1769: 'ARZ' \u2192 'ARI'
+2025-11-07 22:32:20,118 - INFO - Team changed at row 1770: 'ARZ' \u2192 'ARI'
+2025-11-07 22:32:20,118 - INFO - Team changed at row 1771: 'ARZ' \u2192 'ARI'
+2025-11-07 22:32:20,118 - INFO - Team changed at row 1772: 'ARZ' \u2192 'ARI'
+2025-11-07 22:32:20,118 - INFO - Team changed at row 1791: 'LA' \u2192 'LAR'
+2025-11-07 22:32:20,118 - INFO - Team changed at row 1792: 'LA' \u2192 'LAR'
+2025-11-07 22:32:20,118 - INFO - Team changed at row 1793: 'LA' \u2192 'LAR'
+2025-11-07 22:32:20,118 - INFO - Team changed at row 1800: 'BLT' \u2192 'BAL'
+2025-11-07 22:32:20,119 - INFO - Team changed at row 1801: 'BLT' \u2192 'BAL'
+2025-11-07 22:32:20,119 - INFO - Team changed at row 1802: 'BLT' \u2192 'BAL'
+2025-11-07 22:32:20,119 - INFO - Team changed at row 1803: 'BLT' \u2192 'BAL'
+2025-11-07 22:32:20,119 - INFO - Team changed at row 1821: 'LA' \u2192 'LAR'
+2025-11-07 22:32:20,119 - INFO - Team changed at row 1822: 'LA' \u2192 'LAR'
+2025-11-07 22:32:20,119 - INFO - Team changed at row 1823: 'LA' \u2192 'LAR'
+2025-11-07 22:32:20,119 - INFO - Team changed at row 1888: 'HST' \u2192 'HOU'
+2025-11-07 22:32:20,119 - INFO - Team changed at row 1889: 'HST' \u2192 'HOU'
+2025-11-07 22:32:20,119 - INFO - Team changed at row 1890: 'HST' \u2192 'HOU'
+2025-11-07 22:32:20,120 - INFO - Team changed at row 1891: 'HST' \u2192 'HOU'
+2025-11-07 22:32:20,120 - INFO - Team changed at row 1893: 'HST' \u2192 'HOU'
+2025-11-07 22:32:20,120 - INFO - Team changed at row 1894: 'HST' \u2192 'HOU'
+2025-11-07 22:32:20,120 - INFO - Team changed at row 1895: 'HST' \u2192 'HOU'
+2025-11-07 22:32:20,120 - INFO - Team changed at row 1896: 'HST' \u2192 'HOU'
+2025-11-07 22:32:20,120 - INFO - Team changed at row 1922: 'BLT' \u2192 'BAL'
+2025-11-07 22:32:20,120 - INFO - Team changed at row 1923: 'BLT' \u2192 'BAL'
+2025-11-07 22:32:20,120 - INFO - Team changed at row 1924: 'BLT' \u2192 'BAL'
+2025-11-07 22:32:20,120 - INFO - Team changed at row 1925: 'BLT' \u2192 'BAL'
+2025-11-07 22:32:20,120 - INFO - Team changed at row 1928: 'ARZ' \u2192 'ARI'
+2025-11-07 22:32:20,120 - INFO - Team changed at row 1929: 'ARZ' \u2192 'ARI'
+2025-11-07 22:32:20,121 - INFO - Team changed at row 1930: 'ARZ' \u2192 'ARI'
+2025-11-07 22:32:20,121 - INFO - Team changed at row 1931: 'ARZ' \u2192 'ARI'
+2025-11-07 22:32:20,121 - INFO - Team changed at row 1932: 'ARZ' \u2192 'ARI'

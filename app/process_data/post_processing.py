@@ -26,6 +26,9 @@ logging.basicConfig(
 ZIP_FILE_PATH = os.path.join('.', 'source', 'Week9MilliMakerREsults.zip')
 EXTRACTED_CSV_NAME = 'DKResults.csv'
 OPTIMIZER_PREP_FINAL_PATH = os.path.join('.', 'source', 'nfl_Week9_final_with_lambda_and_Salary.xlsx')
+NFL_WEEK = 9
+UPDATED_HISTORICAL_DATA_FILE = "Week1to9_results_cleaned.xlsx"
+HISTORICAL_DATA_FILE = os.path.join('.', 'source', 'Week1to8_results_cleaned.xlsx')
 
 def post_process():
     extract_path = os.path.dirname(ZIP_FILE_PATH)
@@ -159,23 +162,65 @@ def merge_week_files(results_df, df_optimizer_prep_final):
     print(df_final.columns)
 
     # If the Salary is NaN, then most likely DK did not have them listed or there was issue with df_optimizer_prep_final
-    
     df_final = df_final[df_final["Salary"].notna()]
-
-    df_final.to_excel("df_final.audit.xlsx")
 
     return df_final
     
 
     
-def final_processing_current_week():
-    #Add Week numver and generate actual ranks
-    pass
+def final_processing_current_week(df_final):
+    df_final["Week"] = NFL_WEEK
+    # Akk the Actual FPTS Rank 
+    df_final['ActualFPTS_Rank'] = df_final.groupby('Pos')['ActualFPTS'].rank(ascending=False, method='min')
 
-
-def combine_curnent_with_historical():
+    df_final.to_excel("df_final.audit.xlsx")
+    return df_final
+    
+def combine_curnent_with_historical(df_final):
     # Verically concatenate current and historicalfiless and save
-    pass
+    df_historical = pd.read_excel(HISTORICAL_DATA_FILE)
+    
+    # Normaliz team names on df_historical Team and Name fields
+    df_historical = normalize_field(df_historical, "Team", TEAMS)
+    df_historical = normalize_field(df_historical, "Name", TEAMS)
+
+    #  df_historical fields
+    # Team, Position, Salary, ProjectedFPTS, Name, ActualDrafted, ActualFPTS, ProjectedFPTS_Rank
+    # ActualFPTS_Rank, Week
+
+    required_df_historical_fields = ["Team", "Position", "Salary", "ProjectedFPTS",
+                                     "Name", "ActualDrafted", "ActualFPTS", "ProjectedFPTS_Rank",
+                                     "ActualFPTS_Rank", "Week"]
+    
+    rename_dict = {"Pos" : "Position",
+                   "Player" : "Name"}
+    
+    # Use rename_dict to rename columns in df_final
+    df_final = df_final.rename(columns=rename_dict)
+
+    # Drop any fields in df_final that are not in required_df_historical_fields
+    df_historical = df_historical[required_df_historical_fields]
+
+    # Vertically concatenate df_final with df_historical to a dataframe named latest_historical
+    df_combined = pd.concat([df_historical, df_final], axis=0, ignore_index=True)
+
+
+    # Normalize on df_historical.
+    df_combined = normalize_field(df_combined, "Team", TEAMS)
+    df_combined = normalize_field(df_combined, "Name", TEAMS)
+
+
+    print(df_combined["Team"].dropna().unique())
+
+    # Save latest_historical to excel final
+    df_combined.to_excel(UPDATED_HISTORICAL_DATA_FILE, index=False)
+
+    
+ 
+    
+
+
+
 
 if __name__ == "__main__":
     results_df = post_process()
@@ -184,6 +229,6 @@ if __name__ == "__main__":
     results_df, df_optimizer_prep_final = make_team_names_consistent(results_df, df_optimizer_prep_final)
     log_dst_matches(df_optimizer_prep_final, results_df)
     df_final = merge_week_files(results_df, df_optimizer_prep_final)
-    # final_processing_current_week()
-    # combine_curnent_with_historical()
+    df_final = final_processing_current_week(df_final)
+    combine_curnent_with_historical(df_final)
 
