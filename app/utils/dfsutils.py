@@ -2,6 +2,10 @@ import pandas as pd
 import re
 from fuzzywuzzy import fuzz, process
 import re
+import logging
+
+
+
 
 rank_thresholds = [12, 24, 36, 448, 60] # Including 66 to catch everyone below 48
 
@@ -464,24 +468,24 @@ def _norm(s: str) -> str:
 
 # Abbreviations (NFL-style)
 TEAMS = {
-    'ARI': ['Arizona Cardinals', 'Cardinals', 'Arizona', 'ARI'],
+    'ARI': ['Arizona Cardinals', 'Cardinals', 'Arizona', 'ARI', 'ARZ'],
     'ATL': ['Atlanta Falcons', 'Falcons', 'Atlanta', 'ATL'],
-    'BAL': ['Baltimore Ravens', 'Ravens', 'Baltimore', 'BAL'],
+    'BAL': ['Baltimore Ravens', 'Ravens', 'Baltimore', 'BAL', 'BLT'],
     'BUF': ['Buffalo Bills', 'Bills', 'Buffalo', 'BUF'],
     'CAR': ['Carolina Panthers', 'Panthers', 'Carolina', 'CAR'],
     'CHI': ['Chicago Bears', 'Bears', 'Chicago', 'CHI'],
     'CIN': ['Cincinnati Bengals', 'Bengals', 'Cincinnati', 'CIN'],
-    'CLE': ['Cleveland Browns', 'Browns', 'Cleveland', 'CLE'],
+    'CLE': ['Cleveland Browns', 'Browns', 'Cleveland', 'CLE', 'CLV'],
     'DAL': ['Dallas Cowboys', 'Cowboys', 'Dallas', 'DAL'],
     'DEN': ['Denver Broncos', 'Broncos', 'Denver', 'DEN'],
     'DET': ['Detroit Lions', 'Lions', 'Detroit', 'DET'],
     'GB' : ['Green Bay Packers', 'Packers', 'Green Bay', 'GB'],
-    'HOU': ['Houston Texans', 'Texans', 'Houston', 'HOU'],
+    'HOU': ['Houston Texans', 'Texans', 'Houston', 'HOU', 'HST'],
     'IND': ['Indianapolis Colts', 'Colts', 'Indianapolis', 'IND'],
     'JAX': ['Jacksonville Jaguars', 'Jaguars', 'Jacksonville', 'JAX'],
     'KC' : ['Kansas City Chiefs', 'Chiefs', 'Kansas City', 'KC'],
     'LAC': ['Los Angeles Chargers', 'Chargers', 'LA Chargers', 'LAC'],
-    'LAR': ['Los Angeles Rams', 'Rams', 'LA Rams', 'LAR'],
+    'LAR': ['Los Angeles Rams', 'Rams', 'LA Rams', 'LAR', "LA"],
     'LV' : ['Las Vegas Raiders', 'Raiders', 'Las Vegas', 'LV'],
     'MIA': ['Miami Dolphins', 'Dolphins', 'Miami', 'MIA'],
     'MIN': ['Minnesota Vikings', 'Vikings', 'Minnesota', 'MIN'],
@@ -498,17 +502,50 @@ TEAMS = {
     'WAS': ['Washington Commanders', 'Commanders', 'Washington', 'WAS', 'WSH'],
 }
 
-# Build a normalized alias map
-_ALIAS = {}
-for abbr, aliases in TEAMS.items():
-    for alias in aliases:
-        _ALIAS[_norm(alias)] = abbr
+def normalize_field(df, field, lookup_dict, condition=None):
+    """
+    Normalize values in a DataFrame column using a reverse lookup dictionary.
+    Logs all changes. Unmatched values are left untouched.
 
-def get_team_abbreviation(team_name):
-    if team_name is None or (isinstance(team_name, float) and pd.isna(team_name)):
-        return team_name
-    key = _norm(str(team_name))
-    return _ALIAS.get(key, team_name)  # fall back to original if not found
+    Parameters:
+    - df: pandas DataFrame
+    - field: column name to normalize (str)
+    - lookup_dict: dict of canonical keys → list of aliases
+    - condition: optional boolean Series or callable(df) → Series
+
+    Returns:
+    - df with normalized field
+    """
+
+    # Build reverse lookup: alias → canonical key
+    reverse_map = {
+        alias.lower(): key
+        for key, aliases in lookup_dict.items()
+        for alias in aliases
+    }
+
+    def safe_lookup(val):
+        val_str = str(val).strip().lower()
+        return reverse_map.get(val_str, val)
+
+
+    if condition is not None:
+        mask = condition(df) if callable(condition) else condition
+        original = df.loc[mask, field].copy()
+        df.loc[mask, field] = df.loc[mask, field].apply(safe_lookup)
+        updated = df.loc[mask, field]
+    else:
+        original = df[field].copy()
+        df[field] = df[field].apply(safe_lookup)
+        updated = df[field]
+
+    # Log changes
+    changes = original != updated
+    for idx in df.index[changes]:
+        logging.info(f"{field} changed at row {idx}: '{original.loc[idx]}' → '{updated.loc[idx]}'")
+
+    return df
+
 
 
 # Merge removed
@@ -700,7 +737,7 @@ def display_selected_columns(df, columns_to_display):
 
     # Display the DataFrame with only the selected columns
     if columns_to_display:
-        display(df[columns_to_display])
+        print(df[columns_to_display])
     else:
         print("No valid columns to display.")
 

@@ -1,0 +1,31 @@
+/* High-contrast dropdowns */
+.dropdown-contrast .Select-control,
+.dropdown-contrast .Select-menu-outer,
+.dropdown-contrast .Select-input > input,
+.dropdown-contrast .Select-placeholder,
+.dropdown-contrast .Select-value-label {
+  background-color: #111 !important;   /* very dark */
+  color: #f5f5f5 !important;           /* very light text */
+  border-color: #444 !important;
+}
+
+/* Hover / focus outline */
+.dropdown-contrast .Select-control:hover,
+.dropdown-contrast .is-focused > .Select-control {
+  border-color: #888 !important;
+  box-shadow: 0 0 0 2px rgba(200,200,200,0.1) !important;
+}
+
+/* Menu items */
+.dropdown-contrast .VirtualizedSelectOption {
+  background-color: #111 !important;
+  color: #f5f5f5 !important;
+}
+.dropdown-contrast .VirtualizedSelectFocusedOption {
+  background-color: #222 !important;
+}
+
+/* Disabled placeholder */
+.dropdown-contrast .Select-placeholder {
+  color: #bbb !important;
+}
