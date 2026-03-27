@@ -25,7 +25,7 @@ def register_callbacks_master_detail(app):
             return [], []
 
         selected_players = {row["Player"] for row in selected_rows if "Player" in row}
-        filtered = [row for row in df2_data if row.get("Name") in selected_players]
+        filtered = [row for row in df2_data if row.get("Player") in selected_players]
 
         if not filtered:
             return [], []

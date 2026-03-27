@@ -1,0 +1,26 @@
+{
+  "Team": "The team the player belongs to",
+  "Position": "The player's position (e.g., QB, RB)",
+  "Salary": "The player's salary",
+  "ProjectedFPTS": "Projected fantasy points",
+  "Name": "Player's name",
+  "ActualDrafted": "Ownership",
+  "Ownership": "Actual Drafted",
+  "ActualFPTS": "Actual fantasy points scored",
+  "ProjectedFPTS_Rank": "Rank based on projected fantasy points",
+  "ActualFPTS_Rank": "Rank based on actual fantasy points",
+  "Week": "The week of the data",
+  "ResultsPlayer": "Player result identifier",
+  "Unnamed: 0": "Index column (ignore)",
+  "AdjustedFPTS": "Adjusted fantasy points",
+  "BiasApplied": "Bias correction applied",
+  "AdjustmentPercent": "Percentage of adjustment",
+  "Lambda": "Lambda value for calculations",
+  "Sample_count": "Number of samples",
+  "k": "k parameter",
+  "AdjustedFPTS_Rank": "Rank of adjusted fantasy points",
+  "FPTS": "Fantasy points",
+  "FPTS_Rank": "Rank of fantasy points",
+  "_score": "Internal score"
+}
+

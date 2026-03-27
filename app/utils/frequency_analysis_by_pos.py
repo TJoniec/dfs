@@ -99,8 +99,8 @@ def register_frequency_analysis(app):
         lines.append("")
 
         # Overall (top 50)
-        top_overall = overall.head(50).copy()
-        lines.append("== Overall Exposure (Top 50) ==")
+        top_overall = overall.head(100).copy()
+        lines.append("== Overall Exposure (Top 100) ==")
         lines.append(tabulate(
             top_overall,
             ["player","team","count","exposure_%","FPTS_Rank"],

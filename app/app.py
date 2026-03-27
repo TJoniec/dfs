@@ -36,8 +36,8 @@ os.environ["PATH"] = str(CBC_DIR) + os.pathsep + os.environ.get("PATH", "")
 print("CBC found at:", shutil.which("cbc") or shutil.which("cbc.exe"))
 
 # Constants
-FILE_NAME_1 = ('./data/Week9_optimizer_Prep_final.xlsx') # Master
-FILE_NAME_2 = ('./data/Week1to8_results_cleaned.xlsx') # Detail
+FILE_NAME_1 = ('./data/Week11_optimizer_prep_final.xlsx') # Master
+FILE_NAME_2 = ('./data/Week1to10_results_cleaned.xlsx') # Detail
 FILE_NAME_3 = ('./data/sample_week9_optimal_lineups_with_exposure.xlsx') # Testing of cards
 
 #Define the app variable and define the style sheeet, using one for dark contrast
@@ -46,10 +46,13 @@ app = dash.Dash(__name__, external_stylesheets=[dbc.themes.CYBORG])
 def read_data_source_1(FILE_NAME_1):
     df = pd.read_excel(FILE_NAME_1)
     df= force_numeric(df, ["FPTS_Rank", "fantasyPointsRank"])
+    df.rename(columns={"Name" : "Player", "Position" : "Pos"}, inplace=True)
+    df["Depth"]= 1
     return df
 
 def read_data_source_2(FILE_NAME_2):
     df = pd.read_excel(FILE_NAME_2)
+    df.rename(columns={"Name" : "Player"}, inplace=True)
     return df
 
 def read_data_source_3(FILE_NAME_3):
@@ -60,7 +63,7 @@ def read_data_source_3(FILE_NAME_3):
 
 df1 = read_data_source_1(FILE_NAME_1)
 df2 = read_data_source_2(FILE_NAME_2)
-df3 = read_data_source_3(FILE_NAME_3)
+# df3 = read_data_source_3(FILE_NAME_3)
 
 from dash.exceptions import PreventUpdate  # add once at top if not present
 
