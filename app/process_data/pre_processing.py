@@ -20,16 +20,18 @@ logging.basicConfig(
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
 
-NFL_WEEK = 10
-HISTORICAL_DATA_FILE = os.path.join('.', 'source', 'Week1to9_results_cleaned.xlsx')
-DF_PROJECTIONS = os.path.join('.', 'source', 'PFFprojectionsWeek10.csv')
-DF_SALARIES = os.path.join('.', 'source', 'DKSalariesWeek10.csv')
+NFL_WEEK = 11
+HISTORICAL_DATA_FILE = os.path.join('.', 'source', 'Week1to10_results_cleaned.xlsx')
+DF_PROJECTIONS = os.path.join('.', 'source', 'PFFprojectionsWeek11.csv')
+DF_SALARIES = os.path.join('.', 'source', 'DKSalariesWeek11.csv')
 
 REQUIRED_DK_SALARIES_FIELDS = ["Name", "Salary", "TeamAbbrev", "Roster Position"]
 REQUIRED_DF_OPTIMIZER_PREP_FIELDS = ["Name", "Salary", "teamName", "position", "fantasyPoints"]
 
 DEBUG_LAMBDA_CALC = False
 USING_ADJUSTED_FLAG = True
+
+OUTPUT_OPTIMIZER_PREP_FINAL = os.path.join('.', 'generated', 'Week11_optimizer_prep_final.xlsx')
 
 def phase1_cleanup_and_merge():
     df_projections = pd.read_csv(DF_PROJECTIONS)
@@ -94,6 +96,7 @@ def phase1_cleanup_and_merge():
     # Remove players where there is no value in ProjectedFPTS, useless
     df_optimizer_prep = df_optimizer_prep.dropna(subset=['ProjectedFPTS'])
 
+    df_optimizer_prep.to_excel("debug_salary.xlsx")
   
     return df_optimizer_prep
 
@@ -121,7 +124,7 @@ def phase2_introduce_lambda(HISTORICAL_DATA_FILE, df_optimizer_prep):
         position_bias_df=position_bias_df,
         k = 5.0)
     
-    # Create the ranksd
+    # Create the ranks
     df_optimizer_prep_final['ProjectedFPTS_Rank'] = df_optimizer_prep_final.groupby('Position')['ProjectedFPTS'].rank(ascending=False, method='min')
     df_optimizer_prep_final['AdjustedFPTS_Rank'] = df_optimizer_prep_final.groupby('Position')['AdjustedFPTS'].rank(ascending=False, method='min' )
     
@@ -129,12 +132,27 @@ def phase2_introduce_lambda(HISTORICAL_DATA_FILE, df_optimizer_prep):
         df_optimizer_prep_final['FPTS'] = df_optimizer_prep_final['AdjustedFPTS']
         df_optimizer_prep_final['FPTS_Rank'] = df_optimizer_prep_final['AdjustedFPTS_Rank']
 
-    df_optimizer_prep_final.to_excel("Week10_df_optimizer_prep_final.xlsx")
+    df_optimizer_prep_final.to_excel(OUTPUT_OPTIMIZER_PREP_FINAL)
     
-                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                     
 
 if __name__ == "__main__":
     df_optimizer_prep = phase1_cleanup_and_merge()
     # df_optimizer_prep.to_excel("test_optimizer_prep.xlsx")
     phase2_introduce_lambda(HISTORICAL_DATA_FILE, df_optimizer_prep)
     
+
+"""
+Key fiels:
+projectedPoints (from df_projections typically PFF) -> ProjectedFPTS
+ProjectedFPTS_Rank based upon Week, Position, ProjectedFPTS
+
+AdjustedFPTS is the result of lambda calculations
+AdjustedFPTS_Rank is ranks of above
+
+Set the field for the optimizer to use:
+Set the USING_ADJUSTED_FLAG to TRUE
+Create the FPTS, FPTS_Rank fields from lambda generated AdjustedFPTS and AdjustedFPTS_Rank
+
+
+"""

@@ -23,12 +23,12 @@ logging.basicConfig(
 
 
 # Define ZIP file path using os.path.join for cross-platform compatibility
-ZIP_FILE_PATH = os.path.join('.', 'source', 'Week9MilliMakerREsults.zip')
+ZIP_FILE_PATH = os.path.join('.', 'source', 'Millimaker_Week10_REsults.zip')
 EXTRACTED_CSV_NAME = 'DKResults.csv'
-OPTIMIZER_PREP_FINAL_PATH = os.path.join('.', 'source', 'nfl_Week9_final_with_lambda_and_Salary.xlsx')
-NFL_WEEK = 9
-UPDATED_HISTORICAL_DATA_FILE = "Week1to9_results_cleaned.xlsx"
-HISTORICAL_DATA_FILE = os.path.join('.', 'source', 'Week1to8_results_cleaned.xlsx')
+OPTIMIZER_PREP_FINAL_PATH = os.path.join('.', 'source', 'Week10_df_optimizer_prep_final.xlsx')
+NFL_WEEK = 10
+UPDATED_HISTORICAL_DATA_FILE = os.path.join('.', 'generated', "Week1to10_results_cleaned.xlsx") 
+HISTORICAL_DATA_FILE = os.path.join('.', 'source', 'Week1to9_results_cleaned.xlsx')
 
 def post_process():
     extract_path = os.path.dirname(ZIP_FILE_PATH)
@@ -48,7 +48,7 @@ def post_process():
             original_csv_path = os.path.join(extract_path, csv_in_zip)
             os.rename(original_csv_path, extracted_csv_path)
 
-        # Load and process the CSV
+        # Load and process the CSV.  Rename the columns in DKSalaries
         results_df = pd.read_csv(extracted_csv_path, encoding='utf-8')
         results_df = results_df[['Player', '%Drafted', 'FPTS']]
         results_df = results_df.rename(columns={
@@ -58,7 +58,7 @@ def post_process():
         })
 
 
-
+        logging.info("results_df column names at line61 %s", list(results_df.columns))
         # Optional: clean up extracted file
         os.remove(extracted_csv_path)
 
@@ -84,7 +84,7 @@ def optimizer_files():
     except Exception as e:
         print(f"Unexpected error: {e}")
     
-    print("Rows in sf_optimizer_prep_final is  :", df_optimizer_prep_final.shape)
+    print("Rows in df_optimizer_prep_final is  :", df_optimizer_prep_final.shape)
     print(df_optimizer_prep_final)
     return df_optimizer_prep_final
 
@@ -97,7 +97,7 @@ def log_dst_matches(df_optimizer_prep_final, results_df):
     import logging
 
     # Filter DST rows
-    dst_df = df_optimizer_prep_final[df_optimizer_prep_final["Pos"] == "DST"].copy()
+    dst_df = df_optimizer_prep_final[df_optimizer_prep_final["Position"] == "DST"].copy()
 
     # Normalize ResultsPlayer for comparison
     results_players = set(results_df["ResultsPlayer"].dropna().unique())
@@ -126,8 +126,9 @@ def make_team_names_consistent(results_df, df_optimizer_prep_final):
     df_optimizer_prep_final = normalize_field(df_optimizer_prep_final, "Team", TEAMS)
     results_df = normalize_field(results_df, "ResultsPlayer", TEAMS)
 
-    print("ResultsPlayer keys:", results_df["ResultsPlayer"].unique())
-    print("Player keys:", df_optimizer_prep_final["Player"].unique())
+    # Debugging
+    # print("ResultsPlayer keys:", results_df["ResultsPlayer"].unique())
+    # print("Player keys:", df_optimizer_prep_final["Player"].unique())
 
 
     return results_df, df_optimizer_prep_final
@@ -138,19 +139,19 @@ def merge_week_files(results_df, df_optimizer_prep_final):
         results_df,
         df_optimizer_prep_final,
         "ResultsPlayer",
-        "Player",
+        "Name",
         min_score=90
     )
 
     # Log unmatched records (_score is NaN)
     unmatched = df_final[df_final["_score"].notna()]
     for _, row in unmatched.iterrows():
-        logging.info(f"UNMATCHED: ResultsPlayer='{row.get('ResultsPlayer')}', Player='{row.get('Player')}', _score=NaN")
+        logging.info(f"UNMATCHED: ResultsPlayer='{row.get('ResultsPlayer')}', Name'{row.get('Name')}', _score=NaN")
 
     # Log matched records (_score is not NaN)
     matched = df_final[df_final["_score"].isna()]
     for _, row in matched.iterrows():
-        logging.info(f"MATCHED: ResultsPlayer='{row.get('ResultsPlayer')}', Player='{row.get('Player')}', _score={row['_score']:.2f}")
+        logging.info(f"MATCHED: ResultsPlayer='{row.get('ResultsPlayer')}', Name='{row.get('Name')}', _score={row['_score']:.2f}")
 
     # Optional summary
     logging.info(f"Merge Summary: Total={len(df_final)}, Matched={len(matched)}, Unmatched={len(unmatched)}")
@@ -171,7 +172,7 @@ def merge_week_files(results_df, df_optimizer_prep_final):
 def final_processing_current_week(df_final):
     df_final["Week"] = NFL_WEEK
     # Akk the Actual FPTS Rank 
-    df_final['ActualFPTS_Rank'] = df_final.groupby('Pos')['ActualFPTS'].rank(ascending=False, method='min')
+    df_final['ActualFPTS_Rank'] = df_final.groupby('Position')['ActualFPTS'].rank(ascending=False, method='min')
 
     df_final.to_excel("df_final.audit.xlsx")
     return df_final

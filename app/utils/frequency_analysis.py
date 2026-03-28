@@ -96,10 +96,10 @@ def register_frequency_analysis(app):
 
         # By-slot tables (top 5 each)
         for slot in ['QB1','RB1','RB2','WR1','WR2','WR3','TE1','FLEX','DST1']:
-            slot_df = by_slot[by_slot["slot"] == slot].head(5).copy()
+            slot_df = by_slot[by_slot["slot"] == slot].head(100).copy()
             if slot_df.empty:
                 continue
-            lines.append(f"== {slot} Exposure (Top 5) ==")
+            lines.append(f"== {slot} Exposure (Top 100) ==")
             lines.append(tabulate(slot_df, ["player","team","count","exposure_%"],
                                   ["Player","Team","Count","Exposure %"]))
             lines.append("")

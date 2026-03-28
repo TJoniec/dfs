@@ -242,6 +242,6 @@ def adjust_future_projections_dataframe(
     results = pd.concat([results, adjustments], axis=1)
 
     return results[[
-        "Name", 'Team', "Position", "ProjectedFPTS",
+        "Name", 'Team', "Position", "Salary", "ProjectedFPTS",
         "AdjustedFPTS", "BiasApplied", "AdjustmentPercent", "Lambda", 'Sample_count', 'k'
     ]]
