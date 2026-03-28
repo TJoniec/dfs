@@ -18,7 +18,7 @@ This skill reads fantasy football data from Excel files and answers questions ab
 - Read `column_descriptions.json` in the skill directory to get semantic descriptions for each column, and include them in the response.
 - To query a specific player's stats (e.g., "What are Josh Allen's stats?"):
   - Filter the DataFrame where the `Name` column matches the player name (case-insensitive).
-  - Return relevant columns: `Name`, `Position`, `Week`, `ActualFPTS`, `ProjectedFPTS`, `Ownership`, `Salary`.
+  - Return relevant columns: `Name`, `Position`, `Week`, `ActualFPTS`, `ProjectedFPTS`, `ActualDrafted`, `Salary`.
 - To query ownership data (e.g., "Who has the highest ownership?"):
   - Sort by the `ActualDrafted` column descending and return the top results.
 - To compare players at a position (e.g., "Show me all QBs"):
