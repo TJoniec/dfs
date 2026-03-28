@@ -67,42 +67,45 @@ df2 = read_data_source_2(FILE_NAME_2)
 
 from dash.exceptions import PreventUpdate  # add once at top if not present
 
-# Define callbacks.  This callback is triggerred automatically upon data load
+# Shared style for monitoring status elements
+_STATUS_PRE_STYLE = {"fontSize": "0.85rem", "marginBottom": 0}
+
+# Define callbacks.  This callback is triggered automatically upon data load
 @app.callback(
     Output("debug-df3", "children"),
     Input("global-store-df1", "data")
 )
-def show_store_contents(data):
+def show_df1_status(data):
     if not data:
-        return "No data loaded"
-    return f"Records loaded for global-store-df1: {len(data)}"
+        return "⚠️ No player data"
+    return f"✅ Players loaded: {len(data)}"
 
 @app.callback(
     Output("debug-df4", "children"),
     Input("global-store-df2", "data")
 )
-def show_store_contents(data):
+def show_df2_status(data):
     if not data:
-        return "No data loaded"
-    return f"Records loaded for global-store-df2: {len(data)}"
+        return "⚠️ No historical data"
+    return f"✅ Historical records: {len(data)}"
 
 @app.callback(
     Output("debug-df5", "children"),
     Input("global-store-df3", "data")
 )
-def show_store_contents(data):
+def show_generated_lineups_status(data):
     if not data:
-        return "No data loaded"
-    return f"Records loaded for global-store-df3 (Orig Lineups): {len(data)}"
+        return "⏳ No lineups generated yet"
+    return f"✅ Generated lineups: {len(data)}"
 
 @app.callback(
     Output("debug-df6", "children"),
     Input("saved-lineups-store", "data")
 )
-def show_store_contents(data):
+def show_saved_lineups_status(data):
     if not data:
-        return "No data loaded"
-    return f"Records loaded for saved-lineups-store: {len(data)}"
+        return "⏳ No lineups saved yet"
+    return f"✅ Saved lineups: {len(data)}"
 
 from dash import Input, Output, State
 
@@ -262,12 +265,22 @@ app.layout = dbc.Container([
     #dcc.Store(id="global-store-df3", data=df3.to_dict("records")),
     dcc.Store(id="global-store-df3", data = []),
     dcc.Store(id="saved-lineups-store", data=[], storage_type="session"),
-    html.Pre(id="debug-df2"),
-    html.Pre(id="debug-df1"),
-    html.Pre(id="debug-df3"),
-    html.Pre(id="debug-df4"),
-    html.Pre(id="debug-df5"),
-    html.Pre(id="debug-df6"),
+
+    dbc.Card([
+        dbc.CardHeader(html.H5("📊 System Status", className="mb-0")),
+        dbc.CardBody([
+            dbc.Row([
+                dbc.Col(html.Pre(id="debug-df1", style=_STATUS_PRE_STYLE), width=12, lg=4),
+                dbc.Col(html.Pre(id="debug-df2", style=_STATUS_PRE_STYLE), width=12, lg=4),
+                dbc.Col(html.Pre(id="debug-df3", style=_STATUS_PRE_STYLE), width=12, lg=4),
+            ], className="mb-1"),
+            dbc.Row([
+                dbc.Col(html.Pre(id="debug-df4", style=_STATUS_PRE_STYLE), width=12, lg=4),
+                dbc.Col(html.Pre(id="debug-df5", style=_STATUS_PRE_STYLE), width=12, lg=4),
+                dbc.Col(html.Pre(id="debug-df6", style=_STATUS_PRE_STYLE), width=12, lg=4),
+            ]),
+        ])
+    ], className="mb-4"),
 
     AgGrid(id="global-aggrid-df1", 
            className="ag-theme-alpine-dark",
