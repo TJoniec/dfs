@@ -262,12 +262,20 @@ app.layout = dbc.Container([
     #dcc.Store(id="global-store-df3", data=df3.to_dict("records")),
     dcc.Store(id="global-store-df3", data = []),
     dcc.Store(id="saved-lineups-store", data=[], storage_type="session"),
-    html.Pre(id="debug-df2"),
-    html.Pre(id="debug-df1"),
-    html.Pre(id="debug-df3"),
-    html.Pre(id="debug-df4"),
-    html.Pre(id="debug-df5"),
-    html.Pre(id="debug-df6"),
+
+    dbc.Card([
+        dbc.CardHeader(html.H5("System Status", className="mb-0")),
+        dbc.CardBody([
+            dbc.Row([
+                dbc.Col([html.Strong("Player data (global-store-df1): "), html.Pre(id="debug-df3", style={"display": "inline", "margin": 0})], width=12, className="mb-1"),
+                dbc.Col([html.Strong("Historical results (global-store-df2): "), html.Pre(id="debug-df4", style={"display": "inline", "margin": 0})], width=12, className="mb-1"),
+                dbc.Col([html.Strong("Generated lineups: "), html.Pre(id="debug-df5", style={"display": "inline", "margin": 0})], width=12, className="mb-1"),
+                dbc.Col([html.Strong("Session lineups (saved-lineups-store): "), html.Pre(id="debug-df6", style={"display": "inline", "margin": 0})], width=12, className="mb-1"),
+                dbc.Col([html.Strong("Debug df1 raw: "), html.Pre(id="debug-df1", style={"display": "inline", "margin": 0, "fontSize": "0.75rem"})], width=12, className="mb-1"),
+                dbc.Col([html.Strong("Debug df2 raw: "), html.Pre(id="debug-df2", style={"display": "inline", "margin": 0, "fontSize": "0.75rem"})], width=12, className="mb-1"),
+            ])
+        ])
+    ], className="mb-4"),
 
     AgGrid(id="global-aggrid-df1", 
            className="ag-theme-alpine-dark",
